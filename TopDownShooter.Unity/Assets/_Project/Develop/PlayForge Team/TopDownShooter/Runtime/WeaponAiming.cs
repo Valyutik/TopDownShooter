@@ -3,7 +3,7 @@ using UnityEngine.Animations.Rigging;
 
 namespace PlayForge_Team.TopDownShooter.Runtime
 {
-    public sealed class WeaponDirections : MonoBehaviour
+    public sealed class WeaponAiming : MonoBehaviour
     {
         private MultiAimConstraint[] _constraints;
         
