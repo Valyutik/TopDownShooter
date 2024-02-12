@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Animations.Rigging;
 
 namespace PlayForge_Team.TopDownShooter.Runtime
 {
@@ -20,6 +22,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime
         [SerializeField] private float groundCheckExtraUp = 0.2f;
         [SerializeField] private float aimingSpeed = 10f;
         
+        private Transform _aimTransform;
+        private RigBuilder _rigBuilder;
+        private WeaponDirections[] _weaponDirections;
         private Animator _animator;
         private CharacterController _characterController;
         private Camera _mainCamera;
@@ -38,8 +43,16 @@ namespace PlayForge_Team.TopDownShooter.Runtime
             _animator = GetComponentInChildren<Animator>();
             _characterController = GetComponent<CharacterController>();
             _mainCamera = Camera.main;
+
+            _aimTransform = FindAnyObjectByType<PlayerAim>().transform;
+            _rigBuilder = GetComponentInChildren<RigBuilder>();
+
+            _weaponDirections = GetComponentsInChildren<WeaponDirections>(true);
+
             var radius = _characterController.radius;
             _groundCheckBox = new Vector3(radius, 0.0001f, radius);
+
+            InitWeaponDirections(_weaponDirections, _aimTransform);
         }
         
         private void FixedUpdate()
@@ -48,6 +61,16 @@ namespace PlayForge_Team.TopDownShooter.Runtime
             Movement();
             Jumping();
             Aiming();
+        }
+        
+        private void InitWeaponDirections(IEnumerable<WeaponDirections> weaponDirections, Transform aim)
+        {
+            foreach (var t in weaponDirections)
+            {
+                t.Init(aim);
+            }
+
+            _rigBuilder.Build();
         }
         
         private void Gravity()
@@ -140,12 +163,15 @@ namespace PlayForge_Team.TopDownShooter.Runtime
             var mouseScreenPosition = Input.mousePosition;
             var findTargetRay = _mainCamera.ScreenPointToRay(mouseScreenPosition);
     
-            if (Physics.Raycast(findTargetRay, out var hitInfo))
+            if (Physics.Raycast(findTargetRay, out RaycastHit hitInfo))
             {
                 var lookDirection = (hitInfo.point - transform.position).normalized;
                 lookDirection.y = 0;
                 var newRotation = Quaternion.LookRotation(lookDirection, Vector3.up);
-                transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.fixedDeltaTime * aimingSpeed);
+                transform.rotation =
+                    Quaternion.Slerp(transform.rotation, newRotation, aimingSpeed * Time.fixedDeltaTime);
+                _aimTransform.position =
+                    Vector3.Lerp(_aimTransform.position, hitInfo.point, aimingSpeed * Time.fixedDeltaTime);
             }
         }
     }

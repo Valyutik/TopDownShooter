@@ -1,7 +1,9 @@
 {
     "name": "TopDownShooter.Runtime",
     "rootNamespace": "PlayForge_Team.TopDownShooter.Runtime",
-    "references": [],
+    "references": [
+        "GUID:7f7d1af65c2641843945d409d28f2e20"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
