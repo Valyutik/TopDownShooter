@@ -4,9 +4,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 {
     public abstract class Character : MonoBehaviour
     {
-        private CharacterMovement _movement;
-        private CharacterAiming _aiming;
-        private CharacterShooting _shooting;
         private CharacterPart[] _parts;
         
         private void Start()
@@ -16,23 +13,42 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 
         private void Init()
         {
-            _movement = GetComponent<CharacterMovement>();
-            _aiming = GetComponent<CharacterAiming>();
-            _shooting = GetComponent<CharacterShooting>();
+            _parts = GetComponents<CharacterPart>();
 
-            _parts = new CharacterPart[]
+            foreach (var characterPart in _parts)
             {
-                _movement,
-                _aiming,
-                _shooting
-            };
+                characterPart.Init();
+            }
+            InitDeath();
+        }
 
-            foreach (var t in _parts)
+        private void OnDestroy()
+        {
+            foreach (var characterPart in _parts)
             {
-                if (t)
+                if (characterPart is CharacterHealth health)
                 {
-                    t.Init();
+                    health.OnDieEvent -= Stop;
                 }
+            }
+        }
+
+        private void InitDeath()
+        {
+            foreach (var characterPart in _parts)
+            {
+                if (characterPart is CharacterHealth health)
+                {
+                    health.OnDieEvent += Stop;
+                }
+            }
+        }
+
+        private void Stop()
+        {
+            foreach (var characterPart in _parts)
+            {
+                characterPart.Stop();
             }
         }
     }

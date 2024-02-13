@@ -14,7 +14,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
 
         private Camera _mainCamera;
 
-        public override void Init()
+        protected override void OnInit()
         {
             _mainCamera = Camera.main;
             _aimTransform = FindAnyObjectByType<PlayerAim>().transform;
@@ -36,6 +36,11 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
 
         private void FixedUpdate()
         {
+            if (!IsActive)
+            {
+                return;
+            }
+
             Aiming();
         }
 

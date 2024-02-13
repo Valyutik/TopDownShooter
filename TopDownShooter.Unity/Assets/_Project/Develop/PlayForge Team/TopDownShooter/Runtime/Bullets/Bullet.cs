@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
+using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
 {
@@ -41,9 +42,22 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
         
         private void Hit(RaycastHit hit)
         {
+            CheckCharacterHit(hit);
+
             var tr = transform;
             Instantiate(hitPrefab, hit.point, Quaternion.LookRotation(-tr.up, -tr.forward));
             DestroyBullet();
+        }
+        
+        private void CheckCharacterHit(RaycastHit hit)
+        {
+            var hitHealth = hit.collider.GetComponentInChildren<CharacterHealth>();
+
+            if (hitHealth)
+            {
+                const int damage = 10;
+                hitHealth.AddHealthPoints(-damage);
+            }
         }
         
         private void DestroyBullet()

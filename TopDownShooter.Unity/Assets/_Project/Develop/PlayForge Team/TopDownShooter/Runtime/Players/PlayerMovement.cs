@@ -28,7 +28,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
         private bool _isJumping;
         private float _jumpTimer;
 
-        public override void Init()
+        protected override void OnInit()
         {
             _animator = GetComponentInChildren<Animator>();
             _characterController = GetComponent<CharacterController>();
@@ -41,6 +41,12 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
         private void FixedUpdate()
         {
             Gravity();
+
+            if (!IsActive)
+            {
+                return;
+            }
+
             Movement();
             Jumping();
         }

@@ -11,7 +11,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
         private Transform _bulletSpawnPoint;
         private float _bulletTimer;
         
-        public override void Init()
+        protected override void OnInit()
         {
             _bulletSpawnPoint = GetComponentInChildren<BulletSpawnPoint>().transform;
             _bulletTimer = 0;
@@ -19,6 +19,11 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
         
         private void Update()
         {
+            if (!IsActive)
+            {
+                return;
+            }
+
             Shooting();
         }
 

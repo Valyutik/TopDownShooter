@@ -18,7 +18,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         private Transform _playerTransform;
         private Vector3 _prevPosition;
 
-        public override void Init()
+        protected override void OnInit()
         {
             _animator = GetComponentInChildren<Animator>();
             _navMeshAgent = GetComponent<NavMeshAgent>();
@@ -28,7 +28,18 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         
         private void Update()
         {
+            if (!IsActive)
+            {
+                return;
+            }
+
             SetTargetPosition(_playerTransform.position);
+            RefreshAnimation();
+        }
+        
+        protected override void OnStop()
+        {
+            _navMeshAgent.enabled = false;
             RefreshAnimation();
         }
 
