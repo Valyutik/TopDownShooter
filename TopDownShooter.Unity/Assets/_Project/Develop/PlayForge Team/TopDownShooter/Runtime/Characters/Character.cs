@@ -6,6 +6,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
     {
         private CharacterMovement _movement;
         private CharacterAiming _aiming;
+        private CharacterShooting _shooting;
         private CharacterPart[] _parts;
         
         private void Start()
@@ -17,12 +18,13 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         {
             _movement = GetComponent<CharacterMovement>();
             _aiming = GetComponent<CharacterAiming>();
+            _shooting = GetComponent<CharacterShooting>();
 
             _parts = new CharacterPart[]
             {
                 _movement,
-
-                _aiming
+                _aiming,
+                _shooting
             };
 
             foreach (var t in _parts)
