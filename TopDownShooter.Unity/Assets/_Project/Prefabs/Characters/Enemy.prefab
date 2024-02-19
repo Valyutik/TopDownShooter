@@ -2301,6 +2301,8 @@ GameObject:
   - component: {fileID: 5034769516378782170}
   - component: {fileID: 66983791746936742}
   - component: {fileID: 4291684278963323997}
+  - component: {fileID: 7355116948006577433}
+  - component: {fileID: 6894389263634090287}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Player
@@ -2418,6 +2420,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealthPoints: 100
+--- !u!114 &7355116948006577433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229238777843905393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd813717e904b54ac392ac7b335353d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aimingSpeed: 10
+  aimDeltaPosition: {x: 0, y: 1, z: 0}
+  aimingRange: 20
+--- !u!114 &6894389263634090287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229238777843905393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1728f7eef5074aada082533196cec483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: -623471979429067910, guid: 46fcf6245c0a2be4e8f52ca7fbb090d0, type: 3}
+  bulletDelay: 0.05
+  shootingRange: 10
+  bulletsInRow: 7
+  reloadingDuration: 4
 --- !u!1 &5278157940342696964
 GameObject:
   m_ObjectHideFlags: 0
