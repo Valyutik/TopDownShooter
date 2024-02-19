@@ -3,12 +3,14 @@ using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 {
-    public sealed class CharacterHealth : CharacterPart
+    public abstract class CharacterHealth : CharacterPart
     {
         private const string DeathKey = "Death";
         private static readonly int Death = Animator.StringToHash(DeathKey);
         
         public event Action OnDieEvent;
+        public event Action<CharacterHealth> OnDieWithObject;
+        public event Action OnAddHealthPoints;
         
         [SerializeField] private int startHealthPoints = 100;
         private Animator _animator;
@@ -21,12 +23,25 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             {
                 return;
             }
+
             _healthPoints += value;
+
+            OnAddHealthPoints?.Invoke();
 
             if (_healthPoints <= 0)
             {
                 OnDie();
             }
+        }
+        
+        public int GetStartHealthPoints()
+        {
+            return startHealthPoints;
+        }
+
+        public int GetHealthPoints()
+        {
+            return _healthPoints;
         }
         
         protected override void OnInit()
@@ -41,6 +56,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             _isDead = true;
             _animator.SetTrigger(Death);
             OnDieEvent?.Invoke();
+            OnDieWithObject?.Invoke(this);
         }
     }
 }

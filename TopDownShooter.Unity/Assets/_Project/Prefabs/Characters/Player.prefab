@@ -2381,10 +2381,10 @@ GameObject:
   - component: {fileID: 4335681683903336979}
   - component: {fileID: 5251597586457549688}
   - component: {fileID: 3906798709660985817}
-  - component: {fileID: -5873203916092318999}
   - component: {fileID: 4917593487851766025}
   - component: {fileID: 6173959756264613979}
   - component: {fileID: 4850627835961426107}
+  - component: {fileID: 3508461761729177912}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2447,19 +2447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a7485c82e534145957e10451a78dc5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-5873203916092318999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4949562024647837541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e06ae4f38c2420b86fe06a303c40ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startHealthPoints: 100
 --- !u!114 &4917593487851766025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2505,6 +2492,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: -623471979429067910, guid: 46fcf6245c0a2be4e8f52ca7fbb090d0, type: 3}
   bulletDelay: 0.05
+--- !u!114 &3508461761729177912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4949562024647837541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1870ee9831e1456d9441f0074241aeb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealthPoints: 100
 --- !u!1 &4963966420571065840
 GameObject:
   m_ObjectHideFlags: 0
