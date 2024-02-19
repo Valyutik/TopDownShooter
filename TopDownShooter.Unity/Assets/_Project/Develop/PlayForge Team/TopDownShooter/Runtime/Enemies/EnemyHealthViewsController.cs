@@ -15,6 +15,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         [SerializeField] private Vector3 deltaHealthViewPosition = new(0, 2.2f, 0);
         
         private Camera _mainCamera;
+        private EnemySpawner _enemySpawner;
         
         private void Start()
         {
@@ -24,6 +25,18 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         private void Init()
         {
             _mainCamera = Camera.main;
+            _enemySpawner = FindAnyObjectByType<EnemySpawner>();
+            CreateViewsForExistingEnemies();
+            SubscribeForFutureEnemies();
+        }
+        
+        private void Update()
+        {
+            RefreshViewsPositions();
+        }
+        
+        private void CreateViewsForExistingEnemies()
+        {
             var enemyHealths = FindObjectsOfType<EnemyHealth>();
 
             foreach (var enemyHealth in enemyHealths)
@@ -32,9 +45,14 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
             }
         }
         
-        private void Update()
+        private void SubscribeForFutureEnemies()
         {
-            RefreshViewsPositions();
+            _enemySpawner.OnSpawnEnemyEvent += CreateEnemyHealthView;
+        }
+
+        private void CreateEnemyHealthView(Character enemy)
+        {
+            CreateEnemyHealthView(enemy.GetComponent<CharacterHealth>());
         }
 
         private void RefreshViewsPositions()
