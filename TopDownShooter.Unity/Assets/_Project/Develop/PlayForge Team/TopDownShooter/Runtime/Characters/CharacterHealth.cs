@@ -25,6 +25,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             }
 
             _healthPoints += value;
+            _healthPoints = Mathf.Clamp(_healthPoints, 0, startHealthPoints);
 
             OnAddHealthPoints?.Invoke();
 
