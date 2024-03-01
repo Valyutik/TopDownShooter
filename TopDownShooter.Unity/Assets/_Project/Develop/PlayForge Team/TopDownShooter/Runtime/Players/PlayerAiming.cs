@@ -1,4 +1,5 @@
-﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
+﻿using System.Collections.Generic;
+using PlayForge_Team.TopDownShooter.Runtime.Characters;
 using PlayForge_Team.TopDownShooter.Runtime.Weapons;
 using UnityEngine.Animations.Rigging;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
     {
         [SerializeField] private float aimingSpeed = 10f;
 
+        private PlayerAction _playerAction;
         private Transform _aimTransform;
         private RigBuilder _rigBuilder;
         private WeaponAiming[] _weaponAimings;
@@ -18,14 +20,15 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
         protected override void OnInit()
         {
             _mainCamera = Camera.main;
-            _aimTransform = FindAnyObjectByType<PlayerAim>().transform;
+            _playerAction = GetComponent<PlayerAction>();
+            _aimTransform = GetComponentInChildren<PlayerAim>().transform;
             _rigBuilder = GetComponentInChildren<RigBuilder>();
             _weaponAimings = GetComponentsInChildren<WeaponAiming>(true);
 
             InitWeaponAimings(_weaponAimings, _aimTransform);
         }
 
-        private void InitWeaponAimings(WeaponAiming[] weaponAimings, Transform aim)
+        private void InitWeaponAimings(IEnumerable<WeaponAiming> weaponAimings, Transform aim)
         {
             foreach (var weaponAiming in weaponAimings)
             {
@@ -47,7 +50,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
 
         private void Aiming()
         {
-            var mouseScreenPosition = Input.mousePosition;
+            var mouseScreenPosition = _playerAction.LookDirection;
             var findTargetRay = _mainCamera.ScreenPointToRay(mouseScreenPosition);
 
             if (Physics.Raycast(findTargetRay, out var hitInfo))

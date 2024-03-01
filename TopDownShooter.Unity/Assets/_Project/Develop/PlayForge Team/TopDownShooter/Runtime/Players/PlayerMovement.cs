@@ -5,13 +5,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
 {
     public sealed class PlayerMovement : CharacterMovement
     {
-        private const string MovementHorizontalKey = "Horizontal";
-        private const string MovementVerticalKey = "Vertical";
-        private const string IsGroundedKey = "IsGrounded";
-        
-        private static readonly int Horizontal = Animator.StringToHash(MovementHorizontalKey);
-        private static readonly int Vertical = Animator.StringToHash(MovementVerticalKey);
-        private static readonly int IsGrounded = Animator.StringToHash(IsGroundedKey);
+        private static readonly int Horizontal = Animator.StringToHash("Horizontal");
+        private static readonly int Vertical = Animator.StringToHash("Vertical");
+        private static readonly int IsGrounded = Animator.StringToHash("IsGrounded");
         
         [SerializeField] private float gravityMultiplier = 2f;
         [SerializeField] private float movementSpeed = 6f;
@@ -19,35 +15,45 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
         [SerializeField] private float jumpDuration = 1f;
         [SerializeField] private float groundCheckDistance = 0.2f;
         [SerializeField] private float groundCheckExtraUp = 0.2f;
-        
-        private Animator _animator;
+
         private CharacterController _characterController;
+        private PlayerAction _playerAction;
+        private Animator _animator;
         private Camera _mainCamera;
         private Vector3 _groundCheckBox;
         private bool _isGrounded;
         private bool _isJumping;
         private float _jumpTimer;
+        private float _animationBlend;
+        private float _movementSpeed;
+        private float _targetRotation;
 
         protected override void OnInit()
         {
+            _playerAction = GetComponent<PlayerAction>();
             _animator = GetComponentInChildren<Animator>();
             _characterController = GetComponent<CharacterController>();
             _mainCamera = Camera.main;
+            _playerAction.JumpEvent += OnPlayerActionOnJumpEvent;
 
             var radius = _characterController.radius;
             _groundCheckBox = new Vector3(radius, 0.0001f, radius);
         }
 
+        private void OnDestroy()
+        {
+            _playerAction.JumpEvent -= OnPlayerActionOnJumpEvent;
+        }
+
         private void FixedUpdate()
         {
             Gravity();
-
             if (!IsActive)
             {
                 return;
             }
 
-            Movement();
+            Move();
             Jumping();
         }
 
@@ -58,17 +64,18 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
             _characterController.Move(gravity);
         }
 
-        private void Movement()
+        private void Move()
         {
-            var movement = Vector3.zero;
-            movement.x = Input.GetAxis(MovementHorizontalKey);
-            movement.z = Input.GetAxis(MovementVerticalKey);
-
-            movement = GetMovementByCamera(movement);
-            movement *= movementSpeed * Time.fixedDeltaTime;
-
-            _characterController.Move(movement);
-            AnimateMovement(movement);
+            var targetSpeed = movementSpeed;
+            var inputMove = _playerAction.MoveDirection;
+            
+            if (inputMove == Vector2.zero) targetSpeed = 0.0f;
+            
+            var currentInputDirection = new Vector3(inputMove.x, 0.0f, inputMove.y).normalized;
+            currentInputDirection = GetMovementByCamera(currentInputDirection);
+            
+            _characterController.Move(currentInputDirection * (targetSpeed * Time.fixedDeltaTime));
+            AnimateMovement(currentInputDirection);
         }
 
         private Vector3 GetMovementByCamera(Vector3 input)
@@ -99,20 +106,13 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
         private void Jumping()
         {
             RefreshIsGrounded();
-
-            if (Input.GetKeyDown(KeyCode.Space) && _isGrounded && !_isJumping)
-            {
-                SetIsGrounded(false);
-                _isJumping = true;
-                _jumpTimer = 0;
-            }
-
+            
             if (_isJumping)
             {
                 _jumpTimer += Time.fixedDeltaTime;
                 var motion = Vector3.up * (jumpSpeed * (1 - _jumpTimer / jumpDuration) * Time.fixedDeltaTime);
                 _characterController.Move(motion);
-                if (_jumpTimer >= jumpDuration || _isGrounded)
+                if (_jumpTimer >= jumpDuration)
                 {
                     _isJumping = false;
                 }
@@ -140,6 +140,16 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
                 _animator.SetBool(IsGrounded, value);
             }
             _isGrounded = value;
+        }
+        
+        private void OnPlayerActionOnJumpEvent()
+        {
+            if (_isGrounded && !_isJumping)
+            {
+                SetIsGrounded(false);
+                _isJumping = true;
+                _jumpTimer = 0;
+            }
         }
     }
 }

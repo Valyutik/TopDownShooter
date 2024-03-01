@@ -2385,6 +2385,8 @@ GameObject:
   - component: {fileID: 6173959756264613979}
   - component: {fileID: 4850627835961426107}
   - component: {fileID: 3508461761729177912}
+  - component: {fileID: 7700697821088830198}
+  - component: {fileID: 2288691883936161038}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2428,13 +2430,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.62
+  m_Height: 1.99
   m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.0001
-  m_Center: {x: 0, y: 0.8, z: 0}
+  m_Center: {x: 0, y: 0.98, z: 0}
 --- !u!114 &3906798709660985817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2505,6 +2507,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealthPoints: 100
+--- !u!114 &7700697821088830198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4949562024647837541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 83c55fa994a716140a300481ca2aa4b0, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: KeyboardMouse
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &2288691883936161038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4949562024647837541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4615c81e816e4142baac246dfdef4230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4963966420571065840
 GameObject:
   m_ObjectHideFlags: 0

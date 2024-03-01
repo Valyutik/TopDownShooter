@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Players;
+using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime
 {
     public sealed class CameraController : MonoBehaviour
     {
+        [SerializeField] private PlayerAction playerAction;
         [SerializeField] private Transform target;
         [SerializeField] private Transform cameraRoot;
         [SerializeField] private Transform cameraTransform;
@@ -11,7 +13,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime
         [SerializeField] private float moveSpeed = 5f;
         [SerializeField] private float rotationSpeed = 65f;
         [SerializeField] private float zoomSpeed = 10f;
-        [SerializeField] private float mouseZoomMultiplier = 3f;
         [SerializeField] private float minZoom = 3f;
         [SerializeField] private float maxZoom = 14f;
         private float _currentZoom;
@@ -50,16 +51,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime
             {
                 return;
             }
-            float direction = 0;
+            var direction = playerAction.RotateCameraDirection;
             
-            if (Input.GetKey(KeyCode.Q))
-            {
-                direction = 1;
-            }
-            else if (Input.GetKey(KeyCode.E)) 
-            {
-                direction = -1;
-            }
             
             if (Mathf.Approximately(direction, 0))
             {
@@ -77,20 +70,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime
             {
                 return;
             }
-            float direction = 0;
             
-            if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.KeypadMinus))
-            {
-                direction = 1;
-            }
-            else if (Input.GetKey(KeyCode.X) || Input.GetKey(KeyCode.KeypadPlus))
-            {
-                direction = -1;
-            }
-            else if (!Mathf.Approximately(Input.mouseScrollDelta.y, 0))
-            {
-                direction = - Input.mouseScrollDelta.y * mouseZoomMultiplier;
-            }
+            var direction = playerAction.ZoomCamera;
+            
             if (Mathf.Approximately(direction, 0))
             {
                 return;
