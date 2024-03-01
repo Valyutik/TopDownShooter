@@ -1,5 +1,5 @@
-﻿using PlayForge_Team.TopDownShooter.Runtime.Bullets;
-using PlayForge_Team.TopDownShooter.Runtime.Characters;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
+using PlayForge_Team.TopDownShooter.Runtime.Bullets;
 using PlayForge_Team.TopDownShooter.Runtime.Players;
 using UnityEngine;
 
@@ -19,8 +19,11 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         
         protected override void OnInit()
         {
+            base.OnInit();
+
             _bulletSpawnPoint = GetComponentInChildren<BulletSpawnPoint>().transform;
             _targetTransform = FindAnyObjectByType<Player>().transform;
+            
             Reload();
         }
 
@@ -36,10 +39,11 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
             {
                 return;
             }
-            
             _bulletTimer += Time.deltaTime;
+            
             Shooting();
             Reloading();
+            DamageBonusing();
         }
 
         private void Shooting()
@@ -71,7 +75,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         private void Shoot()
         {
             _bulletTimer = 0;
-            SpawnBullet();
+            SpawnBullet(bulletPrefab, _bulletSpawnPoint);
             _currentBulletsInRow--;
         }
 

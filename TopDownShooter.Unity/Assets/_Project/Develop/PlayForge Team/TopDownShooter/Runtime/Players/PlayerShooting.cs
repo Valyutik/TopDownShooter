@@ -13,6 +13,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
         
         protected override void OnInit()
         {
+            base.OnInit();
+
             _bulletSpawnPoint = GetComponentInChildren<BulletSpawnPoint>().transform;
             _bulletTimer = 0;
         }
@@ -23,8 +25,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
             {
                 return;
             }
-
+            
             Shooting();
+            DamageBonusing();
         }
 
         private void Shooting()
@@ -36,7 +39,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
                 if (_bulletTimer >= bulletDelay)
                 {
                     _bulletTimer = 0;
-                    SpawnBullet();
+                    SpawnBullet(bulletPrefab, _bulletSpawnPoint);
                 }
             }
         }

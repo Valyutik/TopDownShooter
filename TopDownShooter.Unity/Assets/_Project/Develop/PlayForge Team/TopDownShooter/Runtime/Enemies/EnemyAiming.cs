@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
-using PlayForge_Team.TopDownShooter.Runtime.Characters;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
+using PlayForge_Team.TopDownShooter.Runtime.Weapons;
 using PlayForge_Team.TopDownShooter.Runtime.Players;
-using UnityEngine;
 using UnityEngine.Animations.Rigging;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
 {

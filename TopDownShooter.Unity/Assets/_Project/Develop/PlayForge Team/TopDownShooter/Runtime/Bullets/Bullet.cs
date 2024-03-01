@@ -8,12 +8,18 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
         [SerializeField] private GameObject hitPrefab;
         [SerializeField] private float speed = 30f;
         [SerializeField] private float lifeTime = 2f;
+        private int _damage;
         
         private void Update()
         {
             ReduceLifeTime();
             CheckHit();
             Move();
+        }
+        
+        public void SetDamage(int value)
+        {
+            _damage = value;
         }
 
         private void ReduceLifeTime()
@@ -28,7 +34,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
 
         private void CheckHit()
         {
-            if (Physics.Raycast(transform.position, transform.forward, out var hit, speed * Time.deltaTime))
+            if (Physics.Raycast(transform.position, transform.forward, out var hit, speed * Time.deltaTime)
+                && !hit.collider.isTrigger)
             {
                 Hit(hit);
             }
@@ -55,8 +62,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
 
             if (hitHealth)
             {
-                const int damage = 10;
-                hitHealth.AddHealthPoints(-damage);
+                hitHealth.AddHealthPoints(-_damage);
             }
         }
         

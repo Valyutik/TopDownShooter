@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
-namespace PlayForge_Team.TopDownShooter.Runtime
+namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
 {
     public sealed class WeaponAiming : MonoBehaviour
     {

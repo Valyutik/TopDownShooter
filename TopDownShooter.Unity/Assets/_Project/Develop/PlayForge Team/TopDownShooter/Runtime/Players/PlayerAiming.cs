@@ -1,6 +1,7 @@
 ﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
-using UnityEngine;
+using PlayForge_Team.TopDownShooter.Runtime.Weapons;
 using UnityEngine.Animations.Rigging;
+using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Players
 {
