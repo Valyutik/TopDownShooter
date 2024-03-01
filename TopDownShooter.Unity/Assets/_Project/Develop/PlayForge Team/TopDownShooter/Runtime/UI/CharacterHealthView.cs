@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
+using UnityEngine;
 
-namespace PlayForge_Team.TopDownShooter.Runtime.Characters
+namespace PlayForge_Team.TopDownShooter.Runtime.UI
 {
     public abstract class CharacterHealthView : MonoBehaviour
     {

@@ -7,7 +7,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 {
     public abstract class CharacterShooting : CharacterPart
     {
-        private const float DefaultDamageMultiplier = 1;
+        public const float DefaultDamageMultiplier = 1;
         
         public event Action<float> SetDamageMultiplierEvent;
         public event Action<float, float> ChangeDamageTimerEvent;
