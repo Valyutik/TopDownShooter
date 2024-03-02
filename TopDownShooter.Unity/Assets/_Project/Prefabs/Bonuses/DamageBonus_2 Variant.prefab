@@ -74,6 +74,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DamageBonus_2 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1811871667671880530, guid: ece37daeff53b714dbdb9865e4184076, type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5657217825034445980, guid: ece37daeff53b714dbdb9865e4184076, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
