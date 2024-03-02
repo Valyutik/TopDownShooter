@@ -5,13 +5,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
     public abstract class Character : MonoBehaviour
     {
         private CharacterPart[] _parts;
-        
-        private void Start()
-        {
-            Init();
-        }
 
-        private void Init()
+        public virtual void Init()
         {
             _parts = GetComponents<CharacterPart>();
 

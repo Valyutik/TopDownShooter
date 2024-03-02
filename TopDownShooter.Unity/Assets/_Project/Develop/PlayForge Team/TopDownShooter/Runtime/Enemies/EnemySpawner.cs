@@ -1,8 +1,9 @@
-﻿using System;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
+using PlayForge_Team.TopDownShooter.Runtime.Bullets;
 using System.Collections.Generic;
 using System.Linq;
-using PlayForge_Team.TopDownShooter.Runtime.Characters;
 using UnityEngine;
+using System;
 using Random = UnityEngine.Random;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
@@ -13,8 +14,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         private const float MaxViewportPosition = 1.1f;
         
         public event Action<Character> OnSpawnEnemyEvent;
-        
-        [SerializeField] private Character enemyPrefab;
+
+        [SerializeField] private BulletSpawner bulletSpawner;
+        [SerializeField] private Enemy enemyPrefab;
         [SerializeField] private int enemyCount = 10;
         [SerializeField] private float spawnDelay = 1f;
         
@@ -59,6 +61,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         {
             var spawnPoint = GetRandomSpawnPoint();
             var newEnemy = Instantiate(enemyPrefab, spawnPoint.transform.position, Quaternion.identity, transform);
+            newEnemy.Init();
+            newEnemy.SetBulletSpawner(bulletSpawner);
             _spawnedEnemyCount++;
             OnSpawnEnemyEvent?.Invoke(newEnemy);
         }

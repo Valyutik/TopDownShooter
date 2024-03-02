@@ -1,15 +1,23 @@
 ﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
+using UnityEngine.Pool;
 using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
 {
     public sealed class Bullet : MonoBehaviour
     {
-        [SerializeField] private GameObject hitPrefab;
         [SerializeField] private float speed = 30f;
         [SerializeField] private float lifeTime = 2f;
+        private ParticleSpawner _particleSpawner;
+        private ObjectPool<Bullet> _pool;
         private int _damage;
-        
+        private float _currentLifeTime;
+
+        private void OnEnable()
+        {
+            _currentLifeTime = lifeTime;
+        }
+
         private void Update()
         {
             ReduceLifeTime();
@@ -22,11 +30,21 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
             _damage = value;
         }
 
+        public void SetParticleSpawner(ParticleSpawner spawner)
+        {
+            _particleSpawner = spawner;
+        }
+
+        public void SetPool(ObjectPool<Bullet> pool)
+        {
+            _pool = pool;
+        }
+
         private void ReduceLifeTime()
         {
-            lifeTime -= Time.deltaTime;
+            _currentLifeTime -= Time.deltaTime;
 
-            if (lifeTime <= 0)
+            if (_currentLifeTime <= 0)
             {
                 DestroyBullet();
             }
@@ -51,8 +69,12 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
         {
             CheckCharacterHit(hit);
 
+            var hitParticle = _particleSpawner.Pool.Get();
             var tr = transform;
-            Instantiate(hitPrefab, hit.point, Quaternion.LookRotation(-tr.up, -tr.forward), transform);
+            hitParticle.transform.position = hit.point;
+            hitParticle.transform.rotation = Quaternion.LookRotation(-tr.up, -tr.forward);
+            hitParticle.Play();
+            
             DestroyBullet();
         }
         
@@ -68,7 +90,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
         
         private void DestroyBullet()
         {
-            Destroy(gameObject);
+            _pool.Release(this);
         }
     }
 }

@@ -1009,37 +1009,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6993539842848835738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1542902305821053518
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5272461175790394922}
-  m_Layer: 0
-  m_Name: Bullets
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5272461175790394922
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542902305821053518}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4335681683903336979}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1565787750585272041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,7 +2442,6 @@ Transform:
   - {fileID: 532096538771397761}
   - {fileID: 2328637556905077407}
   - {fileID: 7764795516363452262}
-  - {fileID: 5272461175790394922}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &5251597586457549688
@@ -2557,8 +2525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa8988eb7b043428c0b23073190f019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletsContainer: {fileID: 5272461175790394922}
-  bulletPrefab: {fileID: -623471979429067910, guid: 46fcf6245c0a2be4e8f52ca7fbb090d0, type: 3}
+  bulletSpawner: {fileID: 0}
   bulletDelay: 0.05
 --- !u!114 &3508461761729177912
 MonoBehaviour:

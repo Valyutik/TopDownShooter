@@ -12,15 +12,17 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         public event Action<float> SetDamageMultiplierEvent;
         public event Action<float, float> ChangeDamageTimerEvent;
 
-        private float DamageMultiplier { get; set; } = DefaultDamageMultiplier;
+        [SerializeField] protected BulletSpawner bulletSpawner;
         
-        [SerializeField] protected Transform bulletsContainer;
+        private float DamageMultiplier { get; set; } = DefaultDamageMultiplier;
+        private Transform _bulletSpawnPoint;
         private Weapon _weapon;
         private float _damageMultiplierTimer;
         private float _damageMultiplierDuration;
         
         protected override void OnInit()
         {
+            _bulletSpawnPoint = GetComponentInChildren<BulletSpawnPoint>().transform;
             _weapon = GetComponentInChildren<Weapon>();
             SetDefaultDamageMultiplier();
         }
@@ -52,9 +54,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             }
         }
 
-        protected void SpawnBullet(Bullet prefab, Transform spawnPoint, Transform parent)
+        protected void SpawnBullet()
         {
-            var bullet = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation, parent);
+            var bullet = bulletSpawner.Pool.Get();
             InitBullet(bullet);
         }
         
@@ -66,6 +68,10 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         private void InitBullet(Bullet bullet)
         {
             bullet.SetDamage((int)(_weapon.Damage * DamageMultiplier));
+            var bulletTransform = bullet.transform;
+            var bulletSpawnTransform = _bulletSpawnPoint.transform;
+            bulletTransform.position = bulletSpawnTransform.position;
+            bulletTransform.rotation = bulletSpawnTransform.rotation;
         }
     }
 }

@@ -7,12 +7,10 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
 {
     public sealed class EnemyShooting : CharacterShooting
     {
-        [SerializeField] private Bullet bulletPrefab;
         [SerializeField] private float bulletDelay = 0.05f;
         [SerializeField] private float shootingRange = 10f;
         [SerializeField] private int bulletsInRow = 7;
         [SerializeField] private float reloadingDuration = 4f;
-        private Transform _bulletSpawnPoint;
         private Transform _targetTransform;
         private float _bulletTimer;
         private int _currentBulletsInRow;
@@ -20,11 +18,15 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         protected override void OnInit()
         {
             base.OnInit();
-
-            _bulletSpawnPoint = GetComponentInChildren<BulletSpawnPoint>().transform;
+            
             _targetTransform = FindAnyObjectByType<Player>().transform;
             
             Reload();
+        }
+
+        public void SetBulletSpawner(BulletSpawner spawner)
+        {
+            bulletSpawner = spawner;
         }
 
         private void Reload()
@@ -75,7 +77,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         private void Shoot()
         {
             _bulletTimer = 0;
-            SpawnBullet(bulletPrefab, _bulletSpawnPoint, bulletsContainer);
+            SpawnBullet();
             _currentBulletsInRow--;
         }
     }
