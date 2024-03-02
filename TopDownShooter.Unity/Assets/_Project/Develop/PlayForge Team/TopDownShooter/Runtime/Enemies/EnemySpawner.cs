@@ -36,7 +36,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         
         private void Update()
         {
-            // Генерируем новых врагов
             SpawnEnemies();
         }
 
@@ -59,7 +58,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         private void SpawnEnemy()
         {
             var spawnPoint = GetRandomSpawnPoint();
-            var newEnemy = Instantiate(enemyPrefab, spawnPoint.transform.position, Quaternion.identity);
+            var newEnemy = Instantiate(enemyPrefab, spawnPoint.transform.position, Quaternion.identity, transform);
             _spawnedEnemyCount++;
             OnSpawnEnemyEvent?.Invoke(newEnemy);
         }
@@ -68,12 +67,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         {
             var possiblePoints = GetSpawnPointsOutOfCamera();
 
-            if (possiblePoints.Count > 0)
-            {
-                return possiblePoints[Random.Range(0, possiblePoints.Count)];
-            }
-            
-            return _spawnPoints[Random.Range(0, _spawnPoints.Length)];
+            return possiblePoints.Count > 0
+                ? possiblePoints[Random.Range(0, possiblePoints.Count)]
+                : _spawnPoints[Random.Range(0, _spawnPoints.Length)];
         }
         
         private List<EnemySpawnPoint> GetSpawnPointsOutOfCamera()
