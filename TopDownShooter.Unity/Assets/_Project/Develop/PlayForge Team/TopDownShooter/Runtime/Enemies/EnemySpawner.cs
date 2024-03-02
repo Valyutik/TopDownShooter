@@ -15,12 +15,12 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         
         public event Action<Character> OnSpawnEnemyEvent;
 
+        [SerializeField]private EnemySpawnPoint[] spawnPoints;
         [SerializeField] private BulletSpawner bulletSpawner;
         [SerializeField] private Enemy enemyPrefab;
         [SerializeField] private int enemyCount = 10;
         [SerializeField] private float spawnDelay = 1f;
         
-        private EnemySpawnPoint[] _spawnPoints;
         private Camera _mainCamera;
         private int _spawnedEnemyCount;
         private float _spawnTimer;
@@ -32,7 +32,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
 
         private void Init()
         {
-            _spawnPoints = FindObjectsOfType<EnemySpawnPoint>();
             _mainCamera = Camera.main;
         }
         
@@ -73,12 +72,12 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
 
             return possiblePoints.Count > 0
                 ? possiblePoints[Random.Range(0, possiblePoints.Count)]
-                : _spawnPoints[Random.Range(0, _spawnPoints.Length)];
+                : spawnPoints[Random.Range(0, spawnPoints.Length)];
         }
         
         private List<EnemySpawnPoint> GetSpawnPointsOutOfCamera()
         {
-            return (from t in _spawnPoints
+            return (from t in spawnPoints
                 let pointViewportPosition = _mainCamera.WorldToViewportPoint(t.transform.position)
                 where !(pointViewportPosition.x >= MinViewportPosition) ||
                       !(pointViewportPosition.x <= MaxViewportPosition) ||

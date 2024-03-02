@@ -41434,6 +41434,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9ce2eb938c472090217cff890db725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPoints:
+  - {fileID: 1195816292}
+  - {fileID: 1388643132}
+  - {fileID: 1357458671}
+  - {fileID: 533065766}
+  - {fileID: 239299260}
+  - {fileID: 649364291}
+  - {fileID: 1908921487}
+  - {fileID: 527551692}
+  - {fileID: 1913342625}
+  - {fileID: 378025355}
+  - {fileID: 1917031276}
+  - {fileID: 321902365}
   bulletSpawner: {fileID: 1550023108}
   enemyPrefab: {fileID: 4473394189542123535, guid: b12fd606a89db2c46bc724ea12140cf4, type: 3}
   enemyCount: 50
