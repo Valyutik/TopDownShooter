@@ -14,6 +14,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 
         private float DamageMultiplier { get; set; } = DefaultDamageMultiplier;
         
+        [SerializeField] protected Transform bulletsContainer;
         private Weapon _weapon;
         private float _damageMultiplierTimer;
         private float _damageMultiplierDuration;
@@ -51,9 +52,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             }
         }
 
-        protected void SpawnBullet(Bullet prefab, Transform spawnPoint)
+        protected void SpawnBullet(Bullet prefab, Transform spawnPoint, Transform parent)
         {
-            var bullet = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
+            var bullet = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation, parent);
             InitBullet(bullet);
         }
         

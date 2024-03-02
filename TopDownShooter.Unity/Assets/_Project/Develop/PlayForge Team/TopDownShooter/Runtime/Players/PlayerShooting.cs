@@ -43,7 +43,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
             if (_bulletTimer >= bulletDelay)
             {
                 _bulletTimer = 0;
-                SpawnBullet(bulletPrefab, _bulletSpawnPoint);
+                SpawnBullet(bulletPrefab, _bulletSpawnPoint, bulletsContainer);
             }
         }
     }

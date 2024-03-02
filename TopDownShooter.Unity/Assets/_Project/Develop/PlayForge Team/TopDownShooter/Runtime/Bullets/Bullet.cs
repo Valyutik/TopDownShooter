@@ -52,7 +52,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
             CheckCharacterHit(hit);
 
             var tr = transform;
-            Instantiate(hitPrefab, hit.point, Quaternion.LookRotation(-tr.up, -tr.forward));
+            Instantiate(hitPrefab, hit.point, Quaternion.LookRotation(-tr.up, -tr.forward), transform);
             DestroyBullet();
         }
         

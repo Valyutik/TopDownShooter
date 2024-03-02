@@ -75,13 +75,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         private void Shoot()
         {
             _bulletTimer = 0;
-            SpawnBullet(bulletPrefab, _bulletSpawnPoint);
+            SpawnBullet(bulletPrefab, _bulletSpawnPoint, bulletsContainer);
             _currentBulletsInRow--;
-        }
-
-        private void SpawnBullet()
-        {
-            Instantiate(bulletPrefab, _bulletSpawnPoint.position, _bulletSpawnPoint.rotation);
         }
     }
 }
