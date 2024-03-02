@@ -3251,15 +3251,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0547f12e3d0d46719fd2d3396904ee83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virtualCamera: {fileID: 0}
+  virtualCamera: {fileID: 1394238410}
   playerAction: {fileID: 2018219522}
-  target: {fileID: 2018219521}
   cameraRoot: {fileID: 75174411}
   cameraTransform: {fileID: 963194228}
   rotationSpeed: 50
   zoomSpeed: 10
-  minZoom: 3
-  maxZoom: 14
+  minZoom: 10
+  maxZoom: 50
 --- !u!1001 &81465010
 PrefabInstance:
   m_ObjectHideFlags: 0
