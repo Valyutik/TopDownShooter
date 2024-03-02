@@ -9,8 +9,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime
         [SerializeField] private Transform target;
         [SerializeField] private Transform cameraRoot;
         [SerializeField] private Transform cameraTransform;
-        [SerializeField] private Vector3 positionOffset = Vector3.up;
-        [SerializeField] private float moveSpeed = 5f;
         [SerializeField] private float rotationSpeed = 65f;
         [SerializeField] private float zoomSpeed = 10f;
         [SerializeField] private float minZoom = 3f;
@@ -29,20 +27,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime
         
         private void LateUpdate()
         {
-            MoveCamera();
             RotateCamera();
             ZoomCamera();
-        }
-        
-        private void MoveCamera()
-        {
-            if (!target || !cameraRoot)
-            {
-                return;
-            }
-            var targetPosition = target.position + positionOffset;
-            cameraRoot.transform.position =
-                Vector3.Lerp(cameraRoot.transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
         
         private void RotateCamera()
@@ -58,10 +44,12 @@ namespace PlayForge_Team.TopDownShooter.Runtime
             {
                 return;
             }
-            
-            var cameraEuler = cameraRoot.eulerAngles;
-            cameraEuler.y += direction * rotationSpeed * Time.deltaTime;
-            cameraRoot.eulerAngles = cameraEuler;
+
+            var currentEulerAngles = cameraRoot.eulerAngles;
+            var cameraEuler = currentEulerAngles;
+            cameraEuler.y += direction;
+            currentEulerAngles = Vector3.Lerp(currentEulerAngles, cameraEuler, rotationSpeed * Time.deltaTime);
+            cameraRoot.eulerAngles = currentEulerAngles;
         }
         
         private void ZoomCamera()
