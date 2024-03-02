@@ -16,6 +16,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime
         [SerializeField] private float maxZoom = 14f;
         
         private CinemachineFramingTransposer _transposer;
+        private Transform _lookAtPoint;
         
         private void Start()
         {
@@ -24,6 +25,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime
 
         private void Init()
         {
+            _lookAtPoint = virtualCamera.LookAt;
             _transposer = virtualCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
         }
         
@@ -69,7 +71,12 @@ namespace PlayForge_Team.TopDownShooter.Runtime
             var currentZoom = direction * zoomSpeed * Time.deltaTime;
 
             _transposer.m_CameraDistance += currentZoom;
-            _transposer.m_CameraDistance = Mathf.Clamp(_transposer.m_CameraDistance, minZoom, maxZoom);
+            var clamp = Mathf.Clamp(_transposer.m_CameraDistance, minZoom, maxZoom);
+            _transposer.m_CameraDistance = clamp;
+            
+            var position = _lookAtPoint.position;
+            position = new Vector3(position.x,clamp, position.z);
+            _lookAtPoint.position = position;
         }
     }
 }

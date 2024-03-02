@@ -1305,7 +1305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 22106dc63dce41746ad234a91af2d657, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 22106dc63dce41746ad234a91af2d657, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1713,6 +1713,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781370920}
     m_Modifications:
+    - target: {fileID: 1157452790003228569, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466871299484978196, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4254327980418924281, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.3333797
@@ -1756,6 +1764,10 @@ PrefabInstance:
     - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_50 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2078,7 +2090,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &52867513
 Transform:
@@ -2393,6 +2405,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781370920}
     m_Modifications:
+    - target: {fileID: 1157452790003228569, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466871299484978196, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4254327980418924281, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 149.81516
@@ -2436,6 +2456,10 @@ PrefabInstance:
     - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_50 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2514,7 +2538,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &61229683
 Transform:
@@ -3186,7 +3210,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &74412183
 Transform:
@@ -3258,7 +3282,7 @@ MonoBehaviour:
   rotationSpeed: 50
   zoomSpeed: 10
   minZoom: 10
-  maxZoom: 50
+  maxZoom: 40
 --- !u!1001 &81465010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4429,9 +4453,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4472,6 +4504,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6844,9 +6880,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6887,6 +6931,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7026,6 +7074,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.02086
@@ -7066,9 +7122,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7215,7 +7279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1d3fc70685d97b748ac1264d8da02551, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1d3fc70685d97b748ac1264d8da02551, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7271,6 +7335,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 93.05227
@@ -7314,6 +7386,14 @@ PrefabInstance:
     - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_Name
       value: DamageBonus_2 Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8102,7 +8182,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &239299259
 Transform:
@@ -8991,7 +9071,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &265157806
 Transform:
@@ -9514,7 +9594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9745,6 +9825,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781370920}
     m_Modifications:
+    - target: {fileID: 1157452790003228569, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466871299484978196, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4254327980418924281, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2491775
@@ -9789,6 +9877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthBonus_50 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9807,6 +9899,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781370920}
     m_Modifications:
+    - target: {fileID: 1157452790003228569, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466871299484978196, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4254327980418924281, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 120.37629
@@ -9850,6 +9950,10 @@ PrefabInstance:
     - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_50 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10450,7 +10554,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &321902364
 Transform:
@@ -10487,6 +10591,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 65.500084
@@ -10527,9 +10639,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10661,6 +10781,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 151.58437
@@ -10701,9 +10829,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11011,6 +11147,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 228.5239
@@ -11051,9 +11195,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11198,6 +11350,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 213.42163
@@ -11238,9 +11398,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12025,7 +12193,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &378025354
 Transform:
@@ -13049,6 +13217,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781370920}
     m_Modifications:
+    - target: {fileID: 1157452790003228569, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466871299484978196, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4254327980418924281, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 183.73987
@@ -13092,6 +13268,10 @@ PrefabInstance:
     - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_50 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14577,7 +14757,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &448218831
 Transform:
@@ -14907,7 +15087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: cc0981408e7c8db4f9f80a57938fd5e3, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: cc0981408e7c8db4f9f80a57938fd5e3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15312,6 +15492,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.019047
@@ -15356,6 +15544,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DamageBonus_2 Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15374,9 +15570,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15417,6 +15621,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16464,6 +16672,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.611912
@@ -16504,9 +16720,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16533,7 +16757,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &527551691
 Transform:
@@ -16955,7 +17179,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &533065765
 Transform:
@@ -17050,9 +17274,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17093,6 +17325,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17870,6 +18106,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 0b6fafa63b69b174584365f2641586a4, type: 3}
   m_PrefabInstance: {fileID: 570547540}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &578723332 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7764795516363452262, guid: b5220b9baf8cdef4781e5f1dc6301780, type: 3}
+  m_PrefabInstance: {fileID: 2018219520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &579822504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17942,7 +18183,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &582077028
 Transform:
@@ -19547,6 +19788,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.08333564
@@ -19591,6 +19840,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DamageBonus_2 Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19616,7 +19873,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &649364290
 Transform:
@@ -22196,7 +22453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0064eb002f3790247969e12119bbf9d2, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0064eb002f3790247969e12119bbf9d2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22316,7 +22573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1d3fc70685d97b748ac1264d8da02551, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1d3fc70685d97b748ac1264d8da02551, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22372,6 +22629,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781370920}
     m_Modifications:
+    - target: {fileID: 1157452790003228569, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466871299484978196, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4254327980418924281, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 242.09285
@@ -22415,6 +22680,10 @@ PrefabInstance:
     - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_50 Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23598,6 +23867,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 119.773735
@@ -23641,6 +23918,14 @@ PrefabInstance:
     - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_Name
       value: DamageBonus_2 Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23784,6 +24069,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 118.92771
@@ -23827,6 +24120,14 @@ PrefabInstance:
     - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_Name
       value: DamageBonus_2 Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25180,9 +25481,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25223,6 +25532,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25415,6 +25728,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.4160194
@@ -25455,9 +25776,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27322,8 +27651,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.38268274, y: 0.00000008940697, z: 0.000000014901161, w: 0.9238798}
-  m_LocalPosition: {x: -0.000006198883, y: 17.677643, z: -17.677696}
+  m_LocalRotation: {x: 0.38268268, y: 0.00000023841858, z: -0.00000008940697, w: 0.92387986}
+  m_LocalPosition: {x: -0.000008583069, y: 17.67764, z: -17.677698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27714,6 +28043,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.4363484
@@ -27757,6 +28094,14 @@ PrefabInstance:
     - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_Name
       value: DamageBonus_2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29765,6 +30110,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 63.182724
@@ -29805,9 +30158,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30001,9 +30362,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30044,6 +30413,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30187,6 +30560,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 117.05495
@@ -30230,6 +30611,14 @@ PrefabInstance:
     - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_Name
       value: DamageBonus_2 Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30778,9 +31167,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30821,6 +31218,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30893,9 +31294,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30936,6 +31345,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31603,7 +32016,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1143292119
 Transform:
@@ -32934,9 +33347,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32977,6 +33398,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33118,7 +33543,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1195816291
 Transform:
@@ -34286,6 +34711,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.254787
@@ -34326,9 +34759,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34650,6 +35091,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 235.9282
@@ -34690,9 +35139,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35012,7 +35469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35590,6 +36047,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.3113997
@@ -35633,6 +36098,14 @@ PrefabInstance:
     - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_Name
       value: DamageBonus_2 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37218,6 +37691,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781370920}
     m_Modifications:
+    - target: {fileID: 1157452790003228569, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466871299484978196, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4254327980418924281, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 178.26187
@@ -37261,6 +37742,10 @@ PrefabInstance:
     - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_50 Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37509,7 +37994,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 921b4e33443ab5943afa3c4841e74cae, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 921b4e33443ab5943afa3c4841e74cae, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -37629,7 +38114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 694e1313d3f12e84aaf959ff6960ddaf, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 694e1313d3f12e84aaf959ff6960ddaf, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -37982,7 +38467,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1357458670
 Transform:
@@ -38725,7 +39210,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1381503420
 Transform:
@@ -38943,7 +39428,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1388643131
 Transform:
@@ -39172,8 +39657,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394238406}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.38268274, y: 0.00000008940697, z: 0.000000014901161, w: 0.9238798}
-  m_LocalPosition: {x: -0.000006198883, y: 17.677643, z: -17.677696}
+  m_LocalRotation: {x: 0.38268268, y: 0.00000023841858, z: -0.00000008940697, w: 0.92387986}
+  m_LocalPosition: {x: -0.000008583069, y: 17.67764, z: -17.677698}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39198,7 +39683,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 590282148}
+  m_LookAt: {fileID: 578723332}
   m_Follow: {fileID: 590282148}
   m_Lens:
     FieldOfView: 60
@@ -39233,7 +39718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CollideAgainst:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 65
   m_IgnoreTag: Player
   m_TransparentLayers:
     serializedVersion: 2
@@ -40538,6 +41023,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 238.21132
@@ -40581,6 +41074,14 @@ PrefabInstance:
     - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_Name
       value: DamageBonus_2 Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40720,6 +41221,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781370920}
     m_Modifications:
+    - target: {fileID: 1157452790003228569, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466871299484978196, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4254327980418924281, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.799282
@@ -40763,6 +41272,10 @@ PrefabInstance:
     - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_50 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516456926099791059, guid: c2297b779783a4848ba0f5bc11b8fde5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40846,7 +41359,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1440867011
 Transform:
@@ -40871,7 +41384,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1440867010}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be9ce2eb938c472090217cff890db725, type: 3}
   m_Name: 
@@ -41649,6 +42162,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.66661
@@ -41692,6 +42213,14 @@ PrefabInstance:
     - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_Name
       value: DamageBonus_2 Variant (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43239,7 +43768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 921b4e33443ab5943afa3c4841e74cae, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 921b4e33443ab5943afa3c4841e74cae, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -43295,9 +43824,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43339,6 +43876,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43355,6 +43896,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: cc0981408e7c8db4f9f80a57938fd5e3, type: 3}
       propertyPath: m_Name
       value: Building Sky_small_color02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cc0981408e7c8db4f9f80a57938fd5e3, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: cc0981408e7c8db4f9f80a57938fd5e3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -44953,7 +45498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 35807f23e7899e541b60b2fb2bbb51ef, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -45681,9 +46226,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45724,6 +46277,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47713,9 +48270,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -47756,6 +48321,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49367,6 +49936,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265157806}
     m_Modifications:
+    - target: {fileID: 144769503587899071, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 771297138961915165, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2426951220190723197, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 178.34705
@@ -49410,6 +49987,14 @@ PrefabInstance:
     - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
       propertyPath: m_Name
       value: DamageBonus_2 Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824058723321716311, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933192331297083409, guid: bac1c05089f50fe45a20a44a44abb636, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50404,7 +50989,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1781370920
 Transform:
@@ -50795,7 +51380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 694e1313d3f12e84aaf959ff6960ddaf, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 694e1313d3f12e84aaf959ff6960ddaf, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -50977,7 +51562,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1796611394
 Transform:
@@ -51546,6 +52131,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.287197
@@ -51586,9 +52179,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53050,7 +53651,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1870242724
 Transform:
@@ -53512,7 +54113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 22106dc63dce41746ad234a91af2d657, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 22106dc63dce41746ad234a91af2d657, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -53807,7 +54408,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1908921486
 Transform:
@@ -53851,7 +54452,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1913342624
 Transform:
@@ -53953,7 +54554,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1917031275
 Transform:
@@ -54149,7 +54750,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1924699209
 Transform:
@@ -56240,7 +56841,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1999776127
 Transform:
@@ -56574,7 +57175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0064eb002f3790247969e12119bbf9d2, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0064eb002f3790247969e12119bbf9d2, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -57113,6 +57714,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 61229683}
     m_Modifications:
+    - target: {fileID: 389371274582785868, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084768368976591621, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3349872127549234732, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 170.514
@@ -57153,9 +57762,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6463513726788527981, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
       propertyPath: m_Name
       value: DamageBonus_3 Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153900120252480518, guid: 4347ec508e1c01a49b32470e3d08d2cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58995,9 +59612,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 582077028}
     m_Modifications:
+    - target: {fileID: 55499058533591940, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_Name
       value: HealthBonus_20 Variant (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 909847785296969012, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59038,6 +59663,10 @@ PrefabInstance:
     - target: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674411806780538494, guid: 282e86722657b624280302cdff716eb5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
