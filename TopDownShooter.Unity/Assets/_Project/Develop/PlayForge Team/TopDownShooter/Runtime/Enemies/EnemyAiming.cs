@@ -1,8 +1,5 @@
 ﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
-using PlayForge_Team.TopDownShooter.Runtime.Weapons;
 using PlayForge_Team.TopDownShooter.Runtime.Players;
-using UnityEngine.Animations.Rigging;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
@@ -14,29 +11,19 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         [SerializeField] private float aimingRange = 20f;
         
         private Transform _aimTransform;
-        private RigBuilder _rigBuilder;
-        private WeaponAiming[] _weaponAimings;
         private Transform _targetTransform;
         private bool _isTargetInRange;
         
         protected override void OnInit()
         {
-            _aimTransform = CreateAim().transform;
-            _rigBuilder = GetComponentInChildren<RigBuilder>();
-            _weaponAimings = GetComponentsInChildren<WeaponAiming>(true);
+            base.OnInit();
 
+            _aimTransform = CreateAim().transform;
             _targetTransform = FindAnyObjectByType<Player>().transform;
+
+            InitWeaponAimings(_aimTransform);
+
             SetDefaultAimPosition();
-            InitWeaponAimings(_weaponAimings, _aimTransform);
-        }
-        
-        private void InitWeaponAimings(IReadOnlyList<WeaponAiming> weaponAimings, Transform aim)
-        {
-            foreach (var weaponAiming in weaponAimings)
-            {
-                weaponAiming.Init(aim);
-            }
-            _rigBuilder.Build();
         }
         
         private void Update()

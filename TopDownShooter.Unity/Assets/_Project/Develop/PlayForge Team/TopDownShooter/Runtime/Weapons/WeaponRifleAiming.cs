@@ -1,6 +1,6 @@
 ﻿namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
 {
-    public sealed class WeaponRifle : Weapon
+    public sealed class WeaponRifleAiming : WeaponAiming
     {
         public override WeaponIdentity Id => WeaponIdentity.Rifle;
     }

@@ -15,9 +15,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         
         public event Action<Character> OnSpawnEnemyEvent;
 
-        [SerializeField]private EnemySpawnPoint[] spawnPoints;
+        [SerializeField] private EnemySpawnPoint[] spawnPoints;
         [SerializeField] private BulletSpawner bulletSpawner;
-        [SerializeField] private Enemy enemyPrefab;
+        [SerializeField] private Enemy[] enemyPrefabs;
         [SerializeField] private int enemyCount = 10;
         [SerializeField] private float spawnDelay = 1f;
         
@@ -59,11 +59,16 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         private void SpawnEnemy()
         {
             var spawnPoint = GetRandomSpawnPoint();
-            var newEnemy = Instantiate(enemyPrefab, spawnPoint.transform.position, Quaternion.identity, transform);
+            var newEnemy = Instantiate(GetRandomEnemyPrefab(), spawnPoint.transform.position, Quaternion.identity, transform);
             newEnemy.Init();
             newEnemy.SetBulletSpawner(bulletSpawner);
             _spawnedEnemyCount++;
             OnSpawnEnemyEvent?.Invoke(newEnemy);
+        }
+        
+        private Enemy GetRandomEnemyPrefab()
+        {
+            return enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
         }
         
         private EnemySpawnPoint GetRandomSpawnPoint()

@@ -519,7 +519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5387303733808094769}
-  - component: {fileID: 6206356484102403979}
+  - component: {fileID: 6100831045090238172}
   m_Layer: 0
   m_Name: RifleAiming
   m_TagString: Untagged
@@ -545,7 +545,7 @@ Transform:
   - {fileID: 2324079271767877283}
   m_Father: {fileID: 304353578720465101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6206356484102403979
+--- !u!114 &6100831045090238172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1398018070580391518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fbe0e668bf94d8a88004c7becac0e54, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bf876c2a3bf4565817d4b6312759af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1427632780510183644
@@ -2122,7 +2122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310745279760712780}
-  - component: {fileID: 7887770482522128060}
+  - component: {fileID: 3949654123742693717}
   m_Layer: 0
   m_Name: ShotgunAiming
   m_TagString: Untagged
@@ -2148,7 +2148,7 @@ Transform:
   - {fileID: 4981257919045388142}
   m_Father: {fileID: 304353578720465101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7887770482522128060
+--- !u!114 &3949654123742693717
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2157,7 +2157,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4982549927946014402}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fbe0e668bf94d8a88004c7becac0e54, type: 3}
+  m_Script: {fileID: 11500000, guid: a57005a9a4ea4dd3b10276f14d95b2de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5076639740688364864
@@ -2303,6 +2303,7 @@ GameObject:
   - component: {fileID: 4291684278963323997}
   - component: {fileID: 7355116948006577433}
   - component: {fileID: 6894389263634090287}
+  - component: {fileID: 5982421780109564760}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Player
@@ -2448,12 +2449,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1728f7eef5074aada082533196cec483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletsContainer: {fileID: 5866083488389796758}
-  bulletPrefab: {fileID: -623471979429067910, guid: 46fcf6245c0a2be4e8f52ca7fbb090d0, type: 3}
+  bulletSpawner: {fileID: 0}
+  weaponId: 0
   bulletDelay: 0.05
   shootingRange: 10
   bulletsInRow: 7
   reloadingDuration: 4
+--- !u!114 &5982421780109564760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229238777843905393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa6e9446ba1404abf8762818c04df5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponId: 0
 --- !u!1 &5278157940342696964
 GameObject:
   m_ObjectHideFlags: 0
@@ -3288,7 +3302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3010315627373405794}
-  - component: {fileID: 2870243760447963377}
+  - component: {fileID: 3549523191626432361}
   m_Layer: 0
   m_Name: PistolAiming
   m_TagString: Untagged
@@ -3314,7 +3328,7 @@ Transform:
   - {fileID: 3939686621573306396}
   m_Father: {fileID: 304353578720465101}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2870243760447963377
+--- !u!114 &3549523191626432361
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3323,7 +3337,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7874316436654138785}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fbe0e668bf94d8a88004c7becac0e54, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c2191fd59e4a90a04844032b07f31d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7916097272933145479

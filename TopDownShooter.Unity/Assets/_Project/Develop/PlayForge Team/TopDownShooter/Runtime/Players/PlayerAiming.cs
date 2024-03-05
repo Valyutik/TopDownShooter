@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using PlayForge_Team.TopDownShooter.Runtime.Characters;
-using PlayForge_Team.TopDownShooter.Runtime.Weapons;
-using UnityEngine.Animations.Rigging;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
 using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Players
@@ -12,30 +9,17 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
 
         private PlayerAction _playerAction;
         private Transform _aimTransform;
-        private RigBuilder _rigBuilder;
-        private WeaponAiming[] _weaponAimings;
 
         private Camera _mainCamera;
 
         protected override void OnInit()
         {
+            base.OnInit();
+
             _mainCamera = Camera.main;
             _playerAction = GetComponent<PlayerAction>();
-            _aimTransform = GetComponentInChildren<PlayerAim>().transform;
-            _rigBuilder = GetComponentInChildren<RigBuilder>();
-            _weaponAimings = GetComponentsInChildren<WeaponAiming>(true);
-
-            InitWeaponAimings(_weaponAimings, _aimTransform);
-        }
-
-        private void InitWeaponAimings(IEnumerable<WeaponAiming> weaponAimings, Transform aim)
-        {
-            foreach (var weaponAiming in weaponAimings)
-            {
-                weaponAiming.Init(aim);
-            }
-
-            _rigBuilder.Build();
+            _aimTransform = FindAnyObjectByType<PlayerAim>().transform;
+            InitWeaponAimings(_aimTransform);
         }
 
         private void FixedUpdate()

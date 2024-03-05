@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Weapons;
+using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 {
@@ -15,6 +16,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
                 characterPart.Init();
             }
             InitDeath();
+            InitWeaponSelection();
         }
 
         private void OnDestroy()
@@ -44,6 +46,29 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             foreach (var characterPart in _parts)
             {
                 characterPart.Stop();
+            }
+        }
+        
+        private void InitWeaponSelection()
+        {
+            foreach (var t in _parts)
+            {
+                if (t is CharacterWeaponSelector weaponSelector)
+                {
+                    weaponSelector.OnWeaponSelected += SelectWeapon;
+                    weaponSelector.RefreshSelectedWeapon();
+                }
+            }
+        }
+        
+        private void SelectWeapon(WeaponIdentity id)
+        {
+            foreach (var t in _parts)
+            {
+                if (t is IWeaponDependent weaponDependent)
+                {
+                    weaponDependent.SetWeapon(id);
+                }
             }
         }
     }

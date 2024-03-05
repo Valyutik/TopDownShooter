@@ -45,7 +45,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
             
             Shooting();
             Reloading();
-            DamageBonusing();
+            DamageBonus();
         }
 
         private void Shooting()

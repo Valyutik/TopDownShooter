@@ -29,7 +29,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
             {
                 return;
             }
-            DamageBonusing();
+            DamageBonus();
         }
 
         private void Shooting()
