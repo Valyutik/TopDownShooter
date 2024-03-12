@@ -9,6 +9,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
         
         [SerializeField] private float bulletDelay = 0.05f;
         [SerializeField] private float reloadingDuration = 4f;
+        [SerializeField] private float spreadAngle = 5f;
         [SerializeField] private int bulletsInRow = 7;
         [SerializeField] private int damage = 10;
         
@@ -39,10 +40,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
             {
                 return;
             }
-            
             _bulletTimer = 0;
 
-            SpawnBullet(damageMultiplier);
+            DoShoot(damageMultiplier);
             _currentBulletsInRow--;
         }
         
@@ -68,10 +68,24 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
             gameObject.SetActive(value);
         }
         
+        protected abstract void DoShoot(float damageMultiplier);
+
+        protected void DefaultShoot(float damageMultiplier)
+        {
+            SpawnBullet(damageMultiplier);
+        }
+        
         private void SpawnBullet(float damageMultiplier)
         {
             var bullet = bulletSpawner.Pool.Get();
+            
             InitBullet(bullet, damageMultiplier);
+            
+            var bulletEulerAngles = bullet.transform.eulerAngles;
+            bulletEulerAngles.x += Random.Range(-spreadAngle, spreadAngle);
+            bulletEulerAngles.y += Random.Range(-spreadAngle, spreadAngle);
+            bullet.transform.eulerAngles = bulletEulerAngles;
+            
         }
 
         private void InitBullet(Bullet bullet, float damageMultiplier)

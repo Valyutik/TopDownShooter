@@ -142,8 +142,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletDelay: 0.9
   reloadingDuration: 1
+  spreadAngle: 15
   bulletsInRow: 2
-  damage: 20
+  damage: 8
+  bulletsInOneShoot: 10
 --- !u!1001 &6311333186212623920
 PrefabInstance:
   m_ObjectHideFlags: 0
