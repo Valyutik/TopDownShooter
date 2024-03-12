@@ -135,6 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 042ce4356dc84541b23663b2245eba43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletDelay: 0.05
+  reloadingDuration: 1
+  bulletsInRow: 30
   damage: 6
 --- !u!4 &6527521384993085451 stripped
 Transform:

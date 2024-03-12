@@ -210,4 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da9070182d2454484437762eaf500c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletDelay: 0.6
+  reloadingDuration: 1
+  bulletsInRow: 6
   damage: 10

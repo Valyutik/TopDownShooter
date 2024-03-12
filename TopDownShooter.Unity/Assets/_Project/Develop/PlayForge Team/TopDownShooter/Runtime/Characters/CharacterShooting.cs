@@ -1,7 +1,8 @@
-﻿using PlayForge_Team.TopDownShooter.Runtime.Bullets;
-using PlayForge_Team.TopDownShooter.Runtime.Weapons;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Weapons;
+using System.Collections.Generic;
 using UnityEngine;
 using System;
+using PlayForge_Team.TopDownShooter.Runtime.Bullets;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 {
@@ -12,12 +13,10 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         
         public event Action<float> SetDamageMultiplierEvent;
         public event Action<float, float> ChangeDamageTimerEvent;
-        
-        [SerializeField] protected BulletSpawner bulletSpawner;
+
+        [HideInInspector] public BulletSpawner spawner;
         private WeaponIdentity _weaponId;
-        
         private float DamageMultiplier { get; set; } = DefaultDamageMultiplier;
-        private BulletSpawnPoint _bulletSpawnPoint;
         private Animator _animator;
         private Weapon[] _weapons;
         private Weapon _currentWeapon;
@@ -26,12 +25,28 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 
         protected override void OnInit()
         {
-            _bulletSpawnPoint = GetComponentInChildren<BulletSpawnPoint>();
             _animator = GetComponentInChildren<Animator>();
             _weapons = GetComponentsInChildren<Weapon>(true);
+            InitWeapons(_weapons);
 
             SetDefaultDamageMultiplier();
         }
+        
+        private void Update()
+        {
+            if (!IsActive)
+            {
+                return;
+            }
+            
+            Shooting();
+            Reloading();
+            DamageBonus();
+        }
+        
+        protected abstract void Shooting();
+
+        protected abstract void Reloading();
         
         public void SetDamageMultiplier(float multiplier, float duration)
         {
@@ -66,12 +81,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
                 SetDefaultDamageMultiplier();
             }
         }
-
-        protected void SpawnBullet()
-        {
-            var bullet = bulletSpawner.Pool.Get();
-            InitBullet(bullet);
-        }
         
         private void SetDefaultDamageMultiplier()
         {
@@ -95,14 +104,28 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 
             _animator.SetInteger(WeaponId, id);
         }
-
-        private void InitBullet(Bullet bullet)
+        
+        protected void Shoot()
         {
-            bullet.SetDamage((int)(_currentWeapon.Damage * DamageMultiplier));
-            var bulletTransform = bullet.transform;
-            var bulletSpawnTransform = _bulletSpawnPoint.transform;
-            bulletTransform.position = bulletSpawnTransform.position;
-            bulletTransform.rotation = bulletSpawnTransform.rotation;
+            _currentWeapon.Shoot(DamageMultiplier);
+        }
+
+        protected bool CheckHasBulletsInRow()
+        {
+            return _currentWeapon.CheckHasBulletsInRow();
+        }
+
+        protected void Reload()
+        {
+            _currentWeapon.Reload();
+        }
+
+        private void InitWeapons(IEnumerable<Weapon> weapons)
+        {
+            foreach (var t in weapons)
+            {
+                t.Init(spawner);
+            }
         }
     }
 }

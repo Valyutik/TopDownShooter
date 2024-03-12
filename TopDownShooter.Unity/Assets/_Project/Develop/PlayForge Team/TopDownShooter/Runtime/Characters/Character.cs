@@ -1,4 +1,5 @@
-﻿using PlayForge_Team.TopDownShooter.Runtime.Weapons;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Bullets;
+using PlayForge_Team.TopDownShooter.Runtime.Weapons;
 using UnityEngine;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Characters
@@ -7,9 +8,10 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
     {
         private CharacterPart[] _parts;
 
-        public virtual void Init()
+        public void Init(BulletSpawner spawner)
         {
             _parts = GetComponents<CharacterPart>();
+            GetComponent<CharacterShooting>().spawner = spawner;
 
             foreach (var characterPart in _parts)
             {

@@ -5,9 +5,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
 {
     public sealed class PlayerShooting : CharacterShooting
     {
-        [SerializeField] private float bulletDelay = 0.05f;
+        [SerializeField] private bool autoReloading = true;
         private PlayerAction _playerAction;
-        private float _bulletTimer;
         
         protected override void OnInit()
         {
@@ -15,7 +14,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
 
             _playerAction = GetComponent<PlayerAction>();
             _playerAction.ShootEvent += Shooting;
-            _bulletTimer = 0;
         }
 
         private void OnDestroy()
@@ -31,16 +29,32 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
             }
             DamageBonus();
         }
-
-        private void Shooting()
+        
+        protected override void Reloading()
         {
-            _bulletTimer += Time.deltaTime;
-
-            if (_bulletTimer >= bulletDelay)
+            if ((!CheckHasBulletsInRow() && Input.GetMouseButton(0)) || Input.GetKeyDown(KeyCode.R))
             {
-                _bulletTimer = 0;
-                SpawnBullet();
+                Reload();
             }
+        }
+        
+        private void AutoReloading()
+        {
+            if (!autoReloading)
+            {
+                return;
+            }
+            
+            if (!CheckHasBulletsInRow())
+            {
+                Reload();
+            }
+        }
+
+        protected override void Shooting()
+        {
+            Shoot();
+            AutoReloading();
         }
     }
 }

@@ -38884,6 +38884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9ce2eb938c472090217cff890db725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 1550023108}
   spawnPoints:
   - {fileID: 1195816292}
   - {fileID: 1388643132}
@@ -38897,7 +38898,6 @@ MonoBehaviour:
   - {fileID: 378025355}
   - {fileID: 1917031276}
   - {fileID: 321902365}
-  bulletSpawner: {fileID: 1550023108}
   enemyPrefabs:
   - {fileID: 3337840886933601384, guid: 6ba36eb3dfa133d4ea3e1b262c4cd91b, type: 3}
   - {fileID: 916928814525221067, guid: 825f6727b277f2b4682ffe4e9d02b458, type: 3}
@@ -53921,6 +53921,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1919400022}
     m_Modifications:
+    - target: {fileID: 3906798709660985817, guid: b5220b9baf8cdef4781e5f1dc6301780, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 1550023108}
     - target: {fileID: 4335681683903336979, guid: b5220b9baf8cdef4781e5f1dc6301780, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -53961,6 +53965,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4850627835961426107, guid: b5220b9baf8cdef4781e5f1dc6301780, type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 1550023108}
     - target: {fileID: 4850627835961426107, guid: b5220b9baf8cdef4781e5f1dc6301780, type: 3}
       propertyPath: bulletSpawner
       value: 
