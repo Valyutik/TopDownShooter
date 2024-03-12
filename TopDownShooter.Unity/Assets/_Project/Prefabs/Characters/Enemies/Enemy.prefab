@@ -2421,7 +2421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c339171c50ed44cdb4cc046bb17d1348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealthPoints: 100
+  startHealthPoints: 50
 --- !u!114 &7355116948006577433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2449,12 +2449,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1728f7eef5074aada082533196cec483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpawner: {fileID: 0}
-  weaponId: 0
-  bulletDelay: 0.05
+  spawner: {fileID: 0}
   shootingRange: 10
-  bulletsInRow: 7
-  reloadingDuration: 4
 --- !u!114 &5982421780109564760
 MonoBehaviour:
   m_ObjectHideFlags: 0
