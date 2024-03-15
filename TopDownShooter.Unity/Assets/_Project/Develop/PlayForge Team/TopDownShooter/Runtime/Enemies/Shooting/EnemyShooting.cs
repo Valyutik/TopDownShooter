@@ -2,9 +2,9 @@
 using PlayForge_Team.TopDownShooter.Runtime.Players;
 using UnityEngine;
 
-namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
+namespace PlayForge_Team.TopDownShooter.Runtime.Enemies.Shooting
 {
-    public sealed class EnemyShooting : CharacterShooting
+    public abstract class EnemyShooting : CharacterShooting
     {
         [SerializeField] private float shootingRange = 10f;
 
@@ -23,13 +23,13 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
             Reload();
         }
 
-        protected override void Shoot()
-        {
-            if (CheckTargetInRange() && CheckHasBulletsInRow())
-            {
-                base.Shoot();
-            }
-        }
+        // protected override void Shoot()
+        // {
+        //     if (CheckTargetInRange() && CheckHasBulletsInRow())
+        //     {
+        //         base.Shoot();
+        //     }
+        // }
         
         protected override void Reload()
         {
@@ -39,7 +39,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
             }
         }
         
-        private bool CheckTargetInRange()
+        protected bool CheckTargetInRange()
         {
             return (_targetTransform.position - transform.position).magnitude <= shootingRange;
         }

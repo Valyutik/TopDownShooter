@@ -2302,7 +2302,6 @@ GameObject:
   - component: {fileID: 66983791746936742}
   - component: {fileID: 4291684278963323997}
   - component: {fileID: 7355116948006577433}
-  - component: {fileID: 6894389263634090287}
   - component: {fileID: 5982421780109564760}
   m_Layer: 0
   m_Name: Enemy
@@ -2437,20 +2436,6 @@ MonoBehaviour:
   aimingSpeed: 10
   aimDeltaPosition: {x: 0, y: 1, z: 0}
   aimingRange: 20
---- !u!114 &6894389263634090287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5229238777843905393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1728f7eef5074aada082533196cec483, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawner: {fileID: 0}
-  shootingRange: 10
 --- !u!114 &5982421780109564760
 MonoBehaviour:
   m_ObjectHideFlags: 0
