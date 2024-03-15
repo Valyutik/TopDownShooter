@@ -34,21 +34,15 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             SetDefaultDamageMultiplier();
         }
         
-        private void Update()
+        protected virtual void Update()
         {
             if (!IsActive)
             {
                 return;
             }
             
-            Shooting();
-            Reloading();
             DamageBonus();
         }
-        
-        protected abstract void Shooting();
-
-        protected abstract void Reloading();
         
         public void SetDamageMultiplier(float multiplier, float duration)
         {
@@ -108,7 +102,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             _animator.SetInteger(WeaponId, id);
         }
         
-        protected void Shoot()
+        protected virtual void Shoot()
         {
             _currentWeapon.Shoot(DamageMultiplier);
         }
@@ -118,7 +112,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             return _currentWeapon.CheckHasBulletsInRow();
         }
 
-        protected void Reload()
+        protected virtual void Reload()
         {
             _currentWeapon.Reload();
         }

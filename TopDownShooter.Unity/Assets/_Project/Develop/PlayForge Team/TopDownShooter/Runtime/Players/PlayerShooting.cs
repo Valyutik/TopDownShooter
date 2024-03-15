@@ -13,32 +13,17 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
             base.OnInit();
 
             _playerAction = GetComponent<PlayerAction>();
-            _playerAction.ShootEvent += Shooting;
+            _playerAction.ShootEvent += Shoot;
+            _playerAction.ReloadEvent += Reload;
         }
 
         private void OnDestroy()
         {
-            _playerAction.ShootEvent -= Shooting;
-        }
-
-        private void Update()
-        {
-            if (!IsActive)
-            {
-                return;
-            }
-            DamageBonus();
+            _playerAction.ShootEvent -= Shoot;
+            _playerAction.ReloadEvent -= Reload;
         }
         
-        protected override void Reloading()
-        {
-            if ((!CheckHasBulletsInRow() && Input.GetMouseButton(0)) || Input.GetKeyDown(KeyCode.R))
-            {
-                Reload();
-            }
-        }
-        
-        private void AutoReloading()
+        private void AutoReload()
         {
             if (!autoReloading)
             {
@@ -51,10 +36,10 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
             }
         }
 
-        protected override void Shooting()
+        protected override void Shoot()
         {
-            Shoot();
-            AutoReloading();
+            base.Shoot();
+            AutoReload();
         }
     }
 }

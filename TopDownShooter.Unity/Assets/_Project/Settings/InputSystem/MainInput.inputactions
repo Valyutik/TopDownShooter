@@ -42,6 +42,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "f3469238-33d5-4fb0-9970-b247814abc64",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "RotateCamera",
                     "type": "Value",
                     "id": "e2d8e4ee-aff7-4d86-9d7e-800174b0eb86",
@@ -305,6 +314,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "SwitchWeaponsToShotgun",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ea7ffdb0-5709-493a-b995-b1fc411c17a5",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Reload",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

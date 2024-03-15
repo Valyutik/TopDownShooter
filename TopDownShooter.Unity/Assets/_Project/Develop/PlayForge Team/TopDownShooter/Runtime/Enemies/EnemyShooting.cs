@@ -15,20 +15,27 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
             base.OnInit();
             _targetTransform = FindAnyObjectByType<Player>().transform;
         }
-        
-        protected override void Shooting()
+
+        protected override void Update()
+        {
+            base.Update();
+            Shoot();
+            Reload();
+        }
+
+        protected override void Shoot()
         {
             if (CheckTargetInRange() && CheckHasBulletsInRow())
             {
-                Shoot();
+                base.Shoot();
             }
         }
         
-        protected override void Reloading()
+        protected override void Reload()
         {
             if (!CheckHasBulletsInRow())
             {
-                Reload();
+                base.Reload();
             }
         }
         

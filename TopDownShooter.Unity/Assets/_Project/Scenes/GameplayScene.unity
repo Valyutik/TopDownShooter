@@ -54237,6 +54237,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1550023108}
     - target: {fileID: 4850627835961426107, guid: b5220b9baf8cdef4781e5f1dc6301780, type: 3}
+      propertyPath: autoReloading
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850627835961426107, guid: b5220b9baf8cdef4781e5f1dc6301780, type: 3}
       propertyPath: bulletSpawner
       value: 
       objectReference: {fileID: 1550023108}

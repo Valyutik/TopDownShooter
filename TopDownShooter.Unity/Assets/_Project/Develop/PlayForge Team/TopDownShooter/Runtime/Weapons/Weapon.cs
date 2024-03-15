@@ -1,6 +1,6 @@
-﻿using System;
-using PlayForge_Team.TopDownShooter.Runtime.Bullets;
+﻿using PlayForge_Team.TopDownShooter.Runtime.Bullets;
 using UnityEngine;
+using System;
 using Random = UnityEngine.Random;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
@@ -40,7 +40,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
         
         public void Shoot(float damageMultiplier)
         {
-            if (!_isShootDelayEnd || !CheckHasBulletsInRow())
+            if (!_isShootDelayEnd || !CheckHasBulletsInRow() || _isReloading)
             {
                 return;
             }
@@ -53,13 +53,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
         
         public void Reload()
         {
-            if (_isReloading)
-            {
-                _reloadingTimer += Time.deltaTime;
-
-                return;
-            }
-            
             _isReloading = true;
         }
         
@@ -111,9 +104,14 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
 
         private void Reloading()
         {
-            if (_isReloading && _reloadingTimer >= reloadingDuration)
+            if (_isReloading)
             {
-                FillBulletsToRow();
+                _reloadingTimer += Time.deltaTime;
+
+                if (_reloadingTimer >= reloadingDuration)
+                {
+                    FillBulletsToRow();
+                }
             }
         }
         
