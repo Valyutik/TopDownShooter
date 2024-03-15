@@ -136,7 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletDelay: 0.05
-  reloadingDuration: 1
+  reloadingDuration: 2
+  spreadAngle: 5
   bulletsInRow: 30
   damage: 6
 --- !u!4 &6527521384993085451 stripped

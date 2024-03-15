@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletDelay: 0.5
-  reloadingDuration: 1
+  reloadingDuration: 1.5
   spreadAngle: 3
   bulletsInRow: 6
   damage: 10
