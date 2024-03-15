@@ -6,13 +6,13 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 {
     public abstract class CharacterWeaponSelector : CharacterPart
     {
-        public event Action<WeaponIdentity> OnWeaponSelected;
+        public event Action<WeaponIdentity> OnWeaponSelectedEvent;
 
         [SerializeField] protected WeaponIdentity weaponId;
 
         public void RefreshSelectedWeapon()
         {
-            OnWeaponSelected?.Invoke(weaponId);
+            OnWeaponSelectedEvent?.Invoke(weaponId);
         }
         
         protected override void OnInit() 

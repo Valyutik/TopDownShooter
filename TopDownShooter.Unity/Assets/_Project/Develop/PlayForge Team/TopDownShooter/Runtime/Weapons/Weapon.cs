@@ -1,10 +1,14 @@
-﻿using PlayForge_Team.TopDownShooter.Runtime.Bullets;
+﻿using System;
+using PlayForge_Team.TopDownShooter.Runtime.Bullets;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
 {
     public abstract class Weapon : MonoBehaviour
     {
+        public event Action<int, int> OnBulletsInRowChangeEvent;
+        
         public abstract WeaponIdentity Id { get; }
         
         [SerializeField] private float bulletDelay = 0.05f;
@@ -44,6 +48,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
 
             DoShoot(damageMultiplier);
             _currentBulletsInRow--;
+            OnBulletsInRowChangeEvent?.Invoke(_currentBulletsInRow, bulletsInRow);
         }
         
         public void Reload()
@@ -66,6 +71,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
         public void SetActive(bool value)
         {
             gameObject.SetActive(value);
+            OnBulletsInRowChangeEvent?.Invoke(_currentBulletsInRow, bulletsInRow);
         }
         
         protected abstract void DoShoot(float damageMultiplier);
@@ -116,6 +122,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
             _isReloading = false;
             _reloadingTimer = 0;
             _currentBulletsInRow = bulletsInRow;
+            OnBulletsInRowChangeEvent?.Invoke(_currentBulletsInRow, bulletsInRow);
         }
     }
 }

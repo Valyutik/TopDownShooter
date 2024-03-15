@@ -13,6 +13,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         
         public event Action<float> SetDamageMultiplierEvent;
         public event Action<float, float> ChangeDamageTimerEvent;
+        
+        public event Action<Weapon> OnSetCurrentWeaponEvent;
 
         [HideInInspector] public BulletSpawner spawner;
         private WeaponIdentity _weaponId;
@@ -92,16 +94,17 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             foreach (var weapon in _weapons)
             {
                 var isTargetId = weapon.Id == identity;
-                weapon.SetActive(isTargetId);
 
                 if (isTargetId)
                 {
                     _currentWeapon = weapon;
-                }
-            }
-            
-            var id = WeaponIdentifier.GetAnimationIdByWeaponIdentify(identity);
 
+                    OnSetCurrentWeaponEvent?.Invoke(weapon);
+                }
+                weapon.SetActive(isTargetId);
+            }
+
+            var id = WeaponIdentifier.GetAnimationIdByWeaponIdentify(identity);
             _animator.SetInteger(WeaponId, id);
         }
         

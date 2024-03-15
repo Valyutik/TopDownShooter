@@ -57,7 +57,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             {
                 if (t is CharacterWeaponSelector weaponSelector)
                 {
-                    weaponSelector.OnWeaponSelected += SelectWeapon;
+                    weaponSelector.OnWeaponSelectedEvent += SelectWeapon;
                     weaponSelector.RefreshSelectedWeapon();
                 }
             }
