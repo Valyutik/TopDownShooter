@@ -7,6 +7,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
     public sealed class PlayerAction : MonoBehaviour
     {
         public event Action JumpEvent, ShootEvent;
+        public event Action<int> SwitchWeaponEvent;
         public Vector2 MoveDirection { get; private set; }
         public Vector2 LookDirection { get; private set; }
         public float ZoomCamera { get; private set; }
@@ -53,5 +54,20 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
         {
             ZoomCamera = value.Get<float>();
         }
-}
+
+        public void OnSwitchWeaponsToRifle()
+        {
+            SwitchWeaponEvent?.Invoke(1);
+        }
+        
+        public void OnSwitchWeaponsToShotgun()
+        {
+            SwitchWeaponEvent?.Invoke(2);
+        }
+        
+        public void OnSwitchWeaponsToPistol()
+        {
+            SwitchWeaponEvent?.Invoke(3);
+        }
+    }
 }

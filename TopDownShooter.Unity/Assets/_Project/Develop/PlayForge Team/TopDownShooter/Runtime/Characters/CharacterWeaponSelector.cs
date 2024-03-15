@@ -8,7 +8,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
     {
         public event Action<WeaponIdentity> OnWeaponSelected;
 
-        [SerializeField] private WeaponIdentity weaponId;
+        [SerializeField] protected WeaponIdentity weaponId;
 
         public void RefreshSelectedWeapon()
         {
