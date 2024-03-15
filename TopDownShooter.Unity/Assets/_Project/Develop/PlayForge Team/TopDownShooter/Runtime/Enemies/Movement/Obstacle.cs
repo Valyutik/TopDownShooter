@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-namespace PlayForge_Team.TopDownShooter.Runtime
+namespace PlayForge_Team.TopDownShooter.Runtime.Enemies.Movement
 {
     [RequireComponent(typeof(Collider))]
-    public sealed class Cover : MonoBehaviour
+    public sealed class Obstacle : MonoBehaviour
     {
         [SerializeField] private float extraOffset = 0.7f;
         private Collider _collider;

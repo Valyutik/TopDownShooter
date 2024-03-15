@@ -405,6 +405,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 52867513}
     m_Modifications:
+    - target: {fileID: 100000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
       propertyPath: m_RootOrder
       value: 421
@@ -444,6 +448,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1074769916}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1074769920}
   m_SourcePrefab: {fileID: 100100000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
 --- !u!4 &5269609 stripped
 Transform:
@@ -1809,6 +1816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color02 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_RootOrder
       value: 244
@@ -1848,6 +1859,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 49775532}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 49775536}
   m_SourcePrefab: {fileID: 100100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
 --- !u!4 &49775527 stripped
 Transform:
@@ -1870,6 +1884,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &49775536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9437382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &50351499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1988,7 +2015,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 52867513}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Vehicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3624,6 +3651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color02 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3663,6 +3694,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 955762066}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 955762070}
   m_SourcePrefab: {fileID: 100100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
 --- !u!4 &101617417 stripped
 Transform:
@@ -3801,6 +3835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color02 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3840,6 +3878,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1279552999}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1279553003}
   m_SourcePrefab: {fileID: 100100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
 --- !u!4 &106236643 stripped
 Transform:
@@ -3862,6 +3903,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color02 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_RootOrder
@@ -3902,6 +3947,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 521301799}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 521301803}
   m_SourcePrefab: {fileID: 100100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
 --- !u!4 &109105597 stripped
 Transform:
@@ -4028,6 +4076,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Police Car (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_RootOrder
       value: 755
@@ -4067,6 +4119,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 277115599}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 277115603}
   m_SourcePrefab: {fileID: 100100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
 --- !u!4 &117846347 stripped
 Transform:
@@ -4531,6 +4586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 225
@@ -4570,6 +4629,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1331838439}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1331838443}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &135121359 stripped
 Transform:
@@ -5074,6 +5136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Ambulance (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       propertyPath: m_RootOrder
       value: 554
@@ -5113,6 +5179,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 551399387}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 551399391}
   m_SourcePrefab: {fileID: 100100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
 --- !u!4 &154415524 stripped
 Transform:
@@ -5847,6 +5916,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
       value: 430
@@ -5886,6 +5959,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 893276702}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 893276706}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &176964129 stripped
 Transform:
@@ -7072,6 +7148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7111,6 +7191,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1463421572}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1463421576}
   m_SourcePrefab: {fileID: 100100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
 --- !u!4 &220804186 stripped
 Transform:
@@ -7354,6 +7437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color02 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_RootOrder
       value: 326
@@ -7393,6 +7480,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1865645703}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1865645707}
   m_SourcePrefab: {fileID: 100100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
 --- !u!4 &227686280 stripped
 Transform:
@@ -7999,6 +8089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Container_color02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       propertyPath: m_RootOrder
       value: 196
@@ -8038,6 +8132,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 324368883}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 324368887}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
 --- !u!4 &241573455 stripped
 Transform:
@@ -8580,6 +8677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
       value: 229
@@ -8619,6 +8720,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 262034617}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 262034621}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &262034613 stripped
 Transform:
@@ -8641,6 +8745,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &262034621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52194590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &265157805
 GameObject:
   m_ObjectHideFlags: 0
@@ -8877,6 +8994,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.002, y: 1.1550001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &277115603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277115595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &277320613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9272,6 +9402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Truck_color03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
       propertyPath: m_RootOrder
       value: 347
@@ -9311,6 +9445,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1987235214}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1987235218}
   m_SourcePrefab: {fileID: 100100000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
 --- !u!4 &288956388 stripped
 Transform:
@@ -10196,6 +10333,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &324368887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324368879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &324988342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10258,6 +10408,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 52867513}
     m_Modifications:
+    - target: {fileID: 100000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
       propertyPath: m_RootOrder
       value: 221
@@ -10297,6 +10451,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 327393882}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 327393886}
   m_SourcePrefab: {fileID: 100100000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
 --- !u!4 &327393878 stripped
 Transform:
@@ -10319,6 +10476,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.008, y: 1.6940001, z: -0.083000004}
   m_TimeToStationary: 0.5
+--- !u!114 &327393886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163136108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &328775432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10764,6 +10934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Bus_color01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
       propertyPath: m_RootOrder
       value: 602
@@ -10803,6 +10977,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1515052985}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1515052989}
   m_SourcePrefab: {fileID: 100100000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
 --- !u!4 &339907436 stripped
 Transform:
@@ -11124,6 +11301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Container_color01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
       propertyPath: m_RootOrder
       value: 614
@@ -11163,6 +11344,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 354597748}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 354597752}
   m_SourcePrefab: {fileID: 100100000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
 --- !u!4 &354597744 stripped
 Transform:
@@ -11185,6 +11369,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &354597752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42066255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &354820454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11521,6 +11718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       propertyPath: m_RootOrder
       value: 293
@@ -11560,6 +11761,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       insertIndex: -1
       addedObject: {fileID: 369375838}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 369375842}
   m_SourcePrefab: {fileID: 100100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
 --- !u!4 &369375834 stripped
 Transform:
@@ -11582,6 +11786,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &369375842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106497103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &373992358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11917,6 +12134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Bus_color03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
       propertyPath: m_RootOrder
       value: 727
@@ -11956,6 +12177,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1216938036}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1216938040}
   m_SourcePrefab: {fileID: 100100000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
 --- !u!4 &386919147 stripped
 Transform:
@@ -12805,6 +13029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Ambulance (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       propertyPath: m_RootOrder
       value: 211
@@ -12844,6 +13072,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 618370068}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 618370072}
   m_SourcePrefab: {fileID: 100100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
 --- !u!4 &415498673 stripped
 Transform:
@@ -13078,6 +13309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Ambulance (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       propertyPath: m_RootOrder
       value: 102
@@ -13117,6 +13352,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 688940590}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 688940594}
   m_SourcePrefab: {fileID: 100100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
 --- !u!4 &420876733 stripped
 Transform:
@@ -13243,6 +13481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
       propertyPath: m_RootOrder
       value: 685
@@ -13284,6 +13526,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
       insertIndex: -1
       addedObject: {fileID: 424725878}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 424725882}
   m_SourcePrefab: {fileID: 100100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
 --- !u!4 &424725874 stripped
 Transform:
@@ -13306,6 +13551,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &424725882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18603943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &425417919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13547,6 +13805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Bus_color01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
       propertyPath: m_RootOrder
       value: 658
@@ -13586,6 +13848,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1302930805}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1302930809}
   m_SourcePrefab: {fileID: 100100000, guid: 9500f0cdde0097a4aac35ced7c1935d7, type: 3}
 --- !u!4 &432989385 stripped
 Transform:
@@ -13933,6 +14198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color02 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13972,6 +14241,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 954295402}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 954295406}
   m_SourcePrefab: {fileID: 100100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
 --- !u!4 &443870760 stripped
 Transform:
@@ -15155,6 +15427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color03 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_RootOrder
       value: 231
@@ -15194,6 +15470,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       insertIndex: -1
       addedObject: {fileID: 489010986}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 489010990}
   m_SourcePrefab: {fileID: 100100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
 --- !u!4 &489010982 stripped
 Transform:
@@ -15216,6 +15495,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &489010990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9148533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &489060009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16058,6 +16350,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &521301803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521301795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &525576659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16763,6 +17068,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -16802,6 +17111,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 598188927}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 598188931}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &551002031 stripped
 Transform:
@@ -16829,6 +17141,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.475, z: 0.053000003}
   m_TimeToStationary: 0.5
+--- !u!114 &551399391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551399383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &553686334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17647,6 +17972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -17686,6 +18015,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2037998162}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2037998166}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &587540674 stripped
 Transform:
@@ -17708,6 +18040,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_Name
       value: Vehicle_Taxi (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
@@ -17748,6 +18084,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 928047079}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 928047083}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &591787116 stripped
 Transform:
@@ -17829,6 +18168,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &598188931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598188923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &598208951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17895,6 +18247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color02 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_RootOrder
       value: 330
@@ -17934,6 +18290,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1386226874}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1386226878}
   m_SourcePrefab: {fileID: 100100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
 --- !u!4 &600713517 stripped
 Transform:
@@ -18384,6 +18743,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.475, z: 0.053000003}
   m_TimeToStationary: 0.5
+--- !u!114 &618370072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618370064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &621949093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18558,6 +18930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color02 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       propertyPath: m_RootOrder
       value: 629
@@ -18597,6 +18973,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       insertIndex: -1
       addedObject: {fileID: 632667293}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 632667297}
   m_SourcePrefab: {fileID: 100100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
 --- !u!4 &632667289 stripped
 Transform:
@@ -18619,6 +18998,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &632667297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209689430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &633314190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19957,6 +20349,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.475, z: 0.053000003}
   m_TimeToStationary: 0.5
+--- !u!114 &688940594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688940586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &698100848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20414,7 +20819,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 73
   m_RenderingLayerMask: 1
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
@@ -20477,6 +20882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Police Car (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_RootOrder
       value: 740
@@ -20516,6 +20925,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 803251992}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 803251996}
   m_SourcePrefab: {fileID: 100100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
 --- !u!4 &708697198 stripped
 Transform:
@@ -20696,6 +21108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 191
@@ -20735,6 +21151,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 711938297}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 711938301}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &711938293 stripped
 Transform:
@@ -20757,6 +21176,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &711938301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391923690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!4 &712783393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
@@ -20773,6 +21205,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_Name
       value: Vehicle_SUV_color03 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_RootOrder
@@ -20813,6 +21249,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1129741838}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1129741842}
   m_SourcePrefab: {fileID: 100100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
 --- !u!4 &715257740 stripped
 Transform:
@@ -20830,6 +21269,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
@@ -20870,6 +21313,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1551488092}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1551488096}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &718419831 stripped
 Transform:
@@ -20887,6 +21333,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       propertyPath: m_Name
       value: Vehicle_Container_color02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       propertyPath: m_RootOrder
@@ -20927,6 +21377,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 719489459}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 719489463}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
 --- !u!4 &719489455 stripped
 Transform:
@@ -20949,6 +21402,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &719489463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173521891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &721245703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21069,6 +21535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color03 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_RootOrder
       value: 490
@@ -21108,6 +21578,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1065706038}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1065706042}
   m_SourcePrefab: {fileID: 100100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
 --- !u!4 &725056828 stripped
 Transform:
@@ -21288,6 +21761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Container_color03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
       propertyPath: m_RootOrder
       value: 563
@@ -21327,6 +21804,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1319868572}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1319868576}
   m_SourcePrefab: {fileID: 100100000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
 --- !u!4 &729676553 stripped
 Transform:
@@ -21899,6 +22379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color02 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       propertyPath: m_RootOrder
       value: 310
@@ -21938,6 +22422,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       insertIndex: -1
       addedObject: {fileID: 824009901}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 824009905}
   m_SourcePrefab: {fileID: 100100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
 --- !u!4 &757783516 stripped
 Transform:
@@ -23283,6 +23770,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.002, y: 1.1550001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &803251996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803251988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &804571634 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
@@ -23299,6 +23799,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
@@ -23339,6 +23843,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1655194216}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1655194220}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &807428512 stripped
 Transform:
@@ -23822,6 +24329,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &824009905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824009897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &824596389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24786,6 +25306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Ambulance (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       propertyPath: m_RootOrder
       value: 186
@@ -24825,6 +25349,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 885216053}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 885216057}
   m_SourcePrefab: {fileID: 100100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
 --- !u!4 &885216049 stripped
 Transform:
@@ -24847,6 +25374,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.475, z: 0.053000003}
   m_TimeToStationary: 0.5
+--- !u!114 &885216057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283072329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &885858459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25112,6 +25652,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &893276706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893276698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!4 &894465791 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 73ef0b63ffe19f94ab35e4475b345d70, type: 3}
@@ -25183,6 +25736,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
       value: 335
@@ -25215,6 +25772,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_ImportantGI
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25222,6 +25787,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1295135354}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1295135358}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &903863286 stripped
 Transform:
@@ -25733,6 +26301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color03 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -25772,6 +26344,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       insertIndex: -1
       addedObject: {fileID: 921459967}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 921459971}
   m_SourcePrefab: {fileID: 100100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
 --- !u!4 &921459963 stripped
 Transform:
@@ -25794,6 +26369,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &921459971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645350533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &924164780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25981,6 +26569,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &928047083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928047075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &931496767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25992,6 +26593,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
@@ -26032,6 +26637,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 931496772}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 931496776}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &931496768 stripped
 Transform:
@@ -26054,6 +26662,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &931496776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470138778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &937030581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26346,6 +26967,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &954295406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954295398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &954705527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26479,6 +27113,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &955762070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955762062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &956057648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26708,6 +27355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
       value: 288
@@ -26747,6 +27398,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1253719565}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1253719569}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &962696588 stripped
 Transform:
@@ -26874,7 +27528,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 9
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -27158,6 +27812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
       propertyPath: m_RootOrder
       value: 216
@@ -27197,6 +27855,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 972619598}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 972619602}
   m_SourcePrefab: {fileID: 100100000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
 --- !u!4 &972619594 stripped
 Transform:
@@ -27219,6 +27880,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &972619602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769638731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &973456575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27808,6 +28482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
       value: 299
@@ -27847,6 +28525,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1723340915}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1723340919}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &993232341 stripped
 Transform:
@@ -28189,6 +28870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color03 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
       propertyPath: m_RootOrder
       value: 628
@@ -28228,6 +28913,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1702640206}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1702640210}
   m_SourcePrefab: {fileID: 100100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
 --- !u!4 &1005902347 stripped
 Transform:
@@ -28245,6 +28933,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
       propertyPath: m_Name
       value: Vehicle_Car_color03 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
       propertyPath: m_RootOrder
@@ -28285,6 +28977,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1117000345}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1117000349}
   m_SourcePrefab: {fileID: 100100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
 --- !u!4 &1007271393 stripped
 Transform:
@@ -29604,6 +30299,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1065706042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065706034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1068902353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29824,6 +30532,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &1074769920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074769912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1075850935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30220,6 +30941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Truck_color02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
       propertyPath: m_RootOrder
       value: 734
@@ -30259,6 +30984,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1093818373}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1093818377}
   m_SourcePrefab: {fileID: 100100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
 --- !u!4 &1093818369 stripped
 Transform:
@@ -30281,6 +31009,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.008, y: 1.6940001, z: -0.083000004}
   m_TimeToStationary: 0.5
+--- !u!114 &1093818377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346013656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1095998052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30366,6 +31107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 414
@@ -30405,6 +31150,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2061551588}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2061551592}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &1096037276 stripped
 Transform:
@@ -30613,6 +31361,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &1117000349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117000341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!4 &1118777692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
@@ -30805,6 +31566,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1129741842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129741834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1129785854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31565,6 +32339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
       value: 415
@@ -31604,6 +32382,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1539450668}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1539450672}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &1152334615 stripped
 Transform:
@@ -31626,6 +32407,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_Name
       value: Vehicle_SUV_color03 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_RootOrder
@@ -31666,6 +32451,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1253451386}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1253451390}
   m_SourcePrefab: {fileID: 100100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
 --- !u!4 &1162431614 stripped
 Transform:
@@ -32178,6 +32966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Bus_color02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
       propertyPath: m_RootOrder
       value: 282
@@ -32217,6 +33009,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1188292006}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1188292010}
   m_SourcePrefab: {fileID: 100100000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
 --- !u!4 &1188292002 stripped
 Transform:
@@ -32239,6 +33034,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.784, z: -0.05}
   m_TimeToStationary: 0.5
+--- !u!114 &1188292010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786567488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1189023047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32305,6 +33113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color02 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_RootOrder
       value: 424
@@ -32344,6 +33156,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1439259273}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1439259277}
   m_SourcePrefab: {fileID: 100100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
 --- !u!4 &1190134880 stripped
 Transform:
@@ -32649,6 +33464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Police Car (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_RootOrder
       value: 398
@@ -32688,6 +33507,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1457330292}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1457330296}
   m_SourcePrefab: {fileID: 100100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
 --- !u!4 &1197441753 stripped
 Transform:
@@ -33109,6 +33931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
       propertyPath: m_RootOrder
       value: 568
@@ -33148,6 +33974,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1334970805}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1334970809}
   m_SourcePrefab: {fileID: 100100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
 --- !u!4 &1209537650 stripped
 Transform:
@@ -33165,6 +33994,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_Name
       value: Vehicle_SUV_color03 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_RootOrder
@@ -33205,6 +34038,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1864969851}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1864969855}
   m_SourcePrefab: {fileID: 100100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
 --- !u!4 &1210853078 stripped
 Transform:
@@ -33394,6 +34230,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.784, z: -0.05}
   m_TimeToStationary: 0.5
+--- !u!114 &1216938040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216938032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1218051194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33576,6 +34425,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -33615,6 +34468,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1228671039}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1228671043}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &1228671035 stripped
 Transform:
@@ -33637,6 +34493,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1228671043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190857519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1232309479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33703,6 +34572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Truck_color02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
       propertyPath: m_RootOrder
       value: 532
@@ -33742,6 +34615,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1265615533}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1265615537}
   m_SourcePrefab: {fileID: 100100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
 --- !u!4 &1232853041 stripped
 Transform:
@@ -33996,6 +34872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Container_color03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
       propertyPath: m_RootOrder
       value: 206
@@ -34035,6 +34915,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1247622119}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1247622123}
   m_SourcePrefab: {fileID: 100100000, guid: d20839e362efa3d4baa3d2ce1b4f2df4, type: 3}
 --- !u!4 &1247622115 stripped
 Transform:
@@ -34057,6 +34940,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &1247622123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155246110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1248517999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34068,6 +34964,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       propertyPath: m_Name
       value: Vehicle_Container_color02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       propertyPath: m_RootOrder
@@ -34108,6 +35008,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1601959641}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1601959645}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
 --- !u!4 &1248518000 stripped
 Transform:
@@ -34267,6 +35170,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1253451390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253451382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1253719561 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
@@ -34288,6 +35204,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1253719569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253719561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1256042038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34857,6 +35786,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.008, y: 1.6940001, z: -0.083000004}
   m_TimeToStationary: 0.5
+--- !u!114 &1265615537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265615529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1271866450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35094,6 +36036,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1279553003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279552995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1281888746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35413,6 +36368,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1295135358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295135350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1295275844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35547,6 +36515,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.784, z: -0.05}
   m_TimeToStationary: 0.5
+--- !u!114 &1302930809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302930801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1305341269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35770,6 +36751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 351
@@ -35809,6 +36794,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1310178703}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1310178707}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &1310178699 stripped
 Transform:
@@ -35831,6 +36819,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1310178707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222426162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1317198795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36068,6 +37069,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &1319868576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319868568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1321040090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36296,6 +37310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color03 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
       propertyPath: m_RootOrder
       value: 418
@@ -36335,6 +37353,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1326377466}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1326377470}
   m_SourcePrefab: {fileID: 100100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
 --- !u!4 &1326014199 stripped
 Transform:
@@ -36362,6 +37383,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1326377470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326377462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1326800511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36716,6 +37750,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1331838443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331838435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1333851509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36791,6 +37838,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &1334970809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334970801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1336323984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36931,6 +37991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -36970,6 +38034,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1339437636}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1339437640}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &1339437632 stripped
 Transform:
@@ -36992,6 +38059,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1339437640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67940718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1339445926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37220,6 +38300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -37259,6 +38343,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2004419671}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2004419675}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &1348550029 stripped
 Transform:
@@ -37497,6 +38584,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color03 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_RootOrder
       value: 749
@@ -37536,6 +38627,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1694418892}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1694418896}
   m_SourcePrefab: {fileID: 100100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
 --- !u!4 &1355461277 stripped
 Transform:
@@ -37760,6 +38854,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 545
@@ -37799,6 +38897,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1360515150}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1360515154}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &1360515146 stripped
 Transform:
@@ -37821,6 +38922,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1360515154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047059722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1361010887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37832,6 +38946,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
@@ -37872,6 +38990,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1361010892}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1361010896}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &1361010888 stripped
 Transform:
@@ -37894,6 +39015,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1361010896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148539365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1366648621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38234,6 +39368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -38273,6 +39411,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1375886330}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1375886334}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &1375886326 stripped
 Transform:
@@ -38295,6 +39436,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1375886334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426607842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1380355211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38582,6 +39736,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1386226878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386226870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1387836595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39723,6 +40890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 168
@@ -39762,6 +40933,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1421430005}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1421430009}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &1421430001 stripped
 Transform:
@@ -39784,6 +40958,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1421430009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832810502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1423309243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40510,6 +41697,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1439259277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439259269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1440867010
 GameObject:
   m_ObjectHideFlags: 0
@@ -40653,6 +41853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 550
@@ -40692,6 +41896,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2097236712}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2097236716}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &1444044293 stripped
 Transform:
@@ -41089,6 +42296,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 52867513}
     m_Modifications:
+    - target: {fileID: 100000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
       propertyPath: m_RootOrder
       value: 233
@@ -41128,6 +42339,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1453048610}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1453048614}
   m_SourcePrefab: {fileID: 100100000, guid: 993432d7809c9bf489a5a96006618fef, type: 3}
 --- !u!4 &1453048606 stripped
 Transform:
@@ -41150,6 +42364,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.008, y: 1.6940001, z: -0.083000004}
   m_TimeToStationary: 0.5
+--- !u!114 &1453048614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804571634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1457330288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
@@ -41171,6 +42398,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.002, y: 1.1550001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1457330296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457330288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1459869712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41354,6 +42594,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1463421576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463421568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1466090426 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
@@ -41725,6 +42978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
       value: 292
@@ -41764,6 +43021,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1570722415}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1570722419}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &1473821972 stripped
 Transform:
@@ -41781,6 +43041,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_Name
       value: Vehicle_Taxi (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
@@ -41821,6 +43085,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1475604976}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1475604980}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &1475604972 stripped
 Transform:
@@ -41843,6 +43110,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1475604980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267825891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1477042360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42661,6 +43941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Truck_color02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
       propertyPath: m_RootOrder
       value: 251
@@ -42700,6 +43984,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1504520845}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1504520849}
   m_SourcePrefab: {fileID: 100100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
 --- !u!4 &1504520841 stripped
 Transform:
@@ -42722,6 +44009,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.008, y: 1.6940001, z: -0.083000004}
   m_TimeToStationary: 0.5
+--- !u!114 &1504520849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434364481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1504532195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42842,6 +44142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Truck_color02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
       propertyPath: m_RootOrder
       value: 434
@@ -42881,6 +44185,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1556894583}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1556894587}
   m_SourcePrefab: {fileID: 100100000, guid: e218686c5655fad46a02ebfb004972ee, type: 3}
 --- !u!4 &1510607439 stripped
 Transform:
@@ -42966,6 +44273,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.784, z: -0.05}
   m_TimeToStationary: 0.5
+--- !u!114 &1515052989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515052981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1516749319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43221,6 +44541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 170
@@ -43260,6 +44584,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1521893201}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1521893205}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &1521893197 stripped
 Transform:
@@ -43282,6 +44609,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1521893205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868297768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1526294405 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
@@ -43353,6 +44693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
       value: 167
@@ -43392,6 +44736,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1861144558}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1861144562}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &1527216621 stripped
 Transform:
@@ -43576,6 +44923,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       propertyPath: m_RootOrder
       value: 192
@@ -43615,6 +44966,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1988926205}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1988926209}
   m_SourcePrefab: {fileID: 100100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
 --- !u!4 &1537243778 stripped
 Transform:
@@ -43642,6 +44996,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1539450672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539450664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1541107479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44201,6 +45568,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1551488096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551488088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1555705566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44330,6 +45710,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.008, y: 1.6940001, z: -0.083000004}
   m_TimeToStationary: 0.5
+--- !u!114 &1556894587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556894579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1561696521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44621,6 +46014,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1570722419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570722411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1572162490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44864,6 +46270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -44903,6 +46313,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1900784825}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1900784829}
   m_SourcePrefab: {fileID: 100100000, guid: b0ad868427d8c8a4b86144f9786776d3, type: 3}
 --- !u!4 &1577945950 stripped
 Transform:
@@ -45472,6 +46885,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &1601959645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601959637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1604311083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45700,6 +47126,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 52867513}
     m_Modifications:
+    - target: {fileID: 100000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
       propertyPath: m_RootOrder
       value: 291
@@ -45739,6 +47169,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1612881738}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1612881742}
   m_SourcePrefab: {fileID: 100100000, guid: f269a0a343ed94c4e908a388c940ea06, type: 3}
 --- !u!4 &1612881734 stripped
 Transform:
@@ -45761,6 +47194,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.784, z: -0.05}
   m_TimeToStationary: 0.5
+--- !u!114 &1612881742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389027937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1613840589 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
@@ -46177,6 +47623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -46216,6 +47666,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1771450890}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1771450894}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &1635564458 stripped
 Transform:
@@ -46525,6 +47978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Container_color02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       propertyPath: m_RootOrder
       value: 561
@@ -46564,6 +48021,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1653332614}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1653332618}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
 --- !u!4 &1653332610 stripped
 Transform:
@@ -46586,6 +48046,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &1653332618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478000211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1654846799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46597,6 +48070,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       propertyPath: m_RootOrder
@@ -46637,6 +48114,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1654846804}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1654846808}
   m_SourcePrefab: {fileID: 100100000, guid: 93d0d450ec8b42e46b724bf2bbee330b, type: 3}
 --- !u!4 &1654846800 stripped
 Transform:
@@ -46659,6 +48139,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1654846808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881225518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1655194212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
@@ -46680,6 +48173,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1655194220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655194212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1668337065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47604,6 +49110,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1694418896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694418888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1694812930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47720,6 +49239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Bus_color02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
       propertyPath: m_RootOrder
       value: 193
@@ -47759,6 +49282,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1695194117}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1695194121}
   m_SourcePrefab: {fileID: 100100000, guid: 79ef5961b86276943ab5da38ae9f2e4b, type: 3}
 --- !u!4 &1695194113 stripped
 Transform:
@@ -47781,6 +49307,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.784, z: -0.05}
   m_TimeToStationary: 0.5
+--- !u!114 &1695194121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302406261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1697048510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47856,6 +49395,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1702640210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702640202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1703541687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48474,6 +50026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       propertyPath: m_RootOrder
       value: 528
@@ -48513,6 +50069,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1837407609}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1837407613}
   m_SourcePrefab: {fileID: 100100000, guid: 288b117258616aa4f928ba6f91dc47c3, type: 3}
 --- !u!4 &1718122645 stripped
 Transform:
@@ -48590,6 +50149,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1723340919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723340911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1724800163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49390,6 +50962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
       propertyPath: m_RootOrder
       value: 346
@@ -49431,6 +51007,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1756299277}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1756299281}
   m_SourcePrefab: {fileID: 100100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
 --- !u!4 &1756299273 stripped
 Transform:
@@ -49453,6 +51032,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &1756299281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328466103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1759769696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49745,6 +51337,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1771450894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771450886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1773988853
 GameObject:
   m_ObjectHideFlags: 0
@@ -51116,6 +52721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Ambulance (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       propertyPath: m_RootOrder
       value: 673
@@ -51155,6 +52764,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1811613248}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1811613252}
   m_SourcePrefab: {fileID: 100100000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
 --- !u!4 &1811613244 stripped
 Transform:
@@ -51177,6 +52789,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.475, z: 0.053000003}
   m_TimeToStationary: 0.5
+--- !u!114 &1811613252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679539629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1812018500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51866,6 +53491,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1837407613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837407605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1837884494
 GameObject:
   m_ObjectHideFlags: 0
@@ -51969,6 +53607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -52008,6 +53650,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1843000438}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1843000442}
   m_SourcePrefab: {fileID: 100100000, guid: ce2dd4bb67fdc684dac928dc2cfb7a0f, type: 3}
 --- !u!4 &1843000434 stripped
 Transform:
@@ -52030,6 +53675,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1843000442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763350159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1843747879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52313,6 +53971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
       propertyPath: m_RootOrder
       value: 656
@@ -52352,6 +54014,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1999674557}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1999674561}
   m_SourcePrefab: {fileID: 100100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
 --- !u!4 &1856060423 stripped
 Transform:
@@ -52604,6 +54269,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1861144562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861144554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1864969847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
@@ -52625,6 +54303,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1864969855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864969847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1 &1865645699 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
@@ -52646,6 +54337,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1865645707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865645699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1866800639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52745,6 +54449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Police Car (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_RootOrder
       value: 312
@@ -52784,6 +54492,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1875508703}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1875508707}
   m_SourcePrefab: {fileID: 100100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
 --- !u!4 &1875508699 stripped
 Transform:
@@ -52806,6 +54517,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.002, y: 1.1550001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1875508707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706799114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1876831215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53227,6 +54951,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1900784829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900784821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1902741880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54202,6 +55939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Container_color02 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       propertyPath: m_RootOrder
       value: 572
@@ -54241,6 +55982,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1930699927}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1930699931}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
 --- !u!4 &1930699923 stripped
 Transform:
@@ -54263,6 +56007,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &1930699931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991902325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1930924068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54437,6 +56194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_SUV_color03 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -54476,6 +56237,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1946682974}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1946682978}
   m_SourcePrefab: {fileID: 100100000, guid: 00d77ce56096de34eb6645947a0f8925, type: 3}
 --- !u!4 &1946682970 stripped
 Transform:
@@ -54498,6 +56262,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &1946682978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445054575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1948032487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54564,6 +56341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -54603,6 +56384,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1948478485}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1948478489}
   m_SourcePrefab: {fileID: 100100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
 --- !u!4 &1948478481 stripped
 Transform:
@@ -54625,6 +56409,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &1948478489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543094365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1953313549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54741,6 +56538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Pick up Truck_color02 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_RootOrder
       value: 586
@@ -54780,6 +56581,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1954561630}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1954561634}
   m_SourcePrefab: {fileID: 100100000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
 --- !u!4 &1954561626 stripped
 Transform:
@@ -54802,6 +56606,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.001, y: 1.1320001, z: 0.134}
   m_TimeToStationary: 0.5
+--- !u!114 &1954561634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831882636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1957632179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55193,6 +57010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 226
@@ -55232,6 +57053,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1975117857}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1975117861}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &1967851560 stripped
 Transform:
@@ -55367,6 +57191,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &1975117861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975117853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1983748197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55496,6 +57333,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.008, y: 1.6940001, z: -0.083000004}
   m_TimeToStationary: 0.5
+--- !u!114 &1987235218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987235210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1987885220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55571,6 +57421,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &1988926209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988926201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1989574775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55726,6 +57589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Truck_color01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
       propertyPath: m_RootOrder
       value: 237
@@ -55765,6 +57632,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1993156212}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1993156216}
   m_SourcePrefab: {fileID: 100100000, guid: cffe1734bc43bcb47b6433ebca05c04c, type: 3}
 --- !u!4 &1993156208 stripped
 Transform:
@@ -55787,6 +57657,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.008, y: 1.6940001, z: -0.083000004}
   m_TimeToStationary: 0.5
+--- !u!114 &1993156216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613840589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1999592751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55862,6 +57745,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &1999674561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999674553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &1999734816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56079,6 +57975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
       propertyPath: m_RootOrder
       value: 207
@@ -56118,6 +58018,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2136544596}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2136544600}
   m_SourcePrefab: {fileID: 100100000, guid: c98da428142c39c42bb62c454958cd1f, type: 3}
 --- !u!4 &2003940533 stripped
 Transform:
@@ -56145,6 +58048,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &2004419675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004419667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!4 &2004821489 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
@@ -56730,6 +58646,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Taxi (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -56769,6 +58689,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2029394200}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2029394204}
   m_SourcePrefab: {fileID: 100100000, guid: 05aec82adc02f16409639716322b1673, type: 3}
 --- !u!4 &2029394196 stripped
 Transform:
@@ -56791,6 +58714,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &2029394204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437857925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &2030083346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57214,6 +59150,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.091000006, y: 1.1290001, z: 0.09200001}
   m_TimeToStationary: 0.5
+--- !u!114 &2037998166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037998158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &2038999344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57388,6 +59337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Police Car (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_RootOrder
       value: 597
@@ -57427,6 +59380,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2046410596}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046410600}
   m_SourcePrefab: {fileID: 100100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
 --- !u!4 &2046410592 stripped
 Transform:
@@ -57449,6 +59405,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.002, y: 1.1550001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &2046410600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860099649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &2046770378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58192,6 +60161,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &2061551592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061551584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &2061762325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58258,6 +60240,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color02 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       propertyPath: m_RootOrder
       value: 402
@@ -58297,6 +60283,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2063058725}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2063058729}
   m_SourcePrefab: {fileID: 100100000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
 --- !u!4 &2063058721 stripped
 Transform:
@@ -58319,6 +60308,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &2063058729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400886505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &2064045580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58439,6 +60441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Car_color01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -58480,6 +60486,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2069417815}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2069417819}
   m_SourcePrefab: {fileID: 100100000, guid: a119eb0fa059db34bbaef286c1af1696, type: 3}
 --- !u!4 &2069417811 stripped
 Transform:
@@ -58502,6 +60511,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &2069417819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575475449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &2076272339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59082,6 +61104,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.006, y: 1.2160001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &2097236716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097236708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!4 &2099467977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4727245855609134878, guid: 282e86722657b624280302cdff716eb5, type: 3}
@@ -59694,6 +61729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Container_color02 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       propertyPath: m_RootOrder
       value: 618
@@ -59733,6 +61772,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2120526418}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2120526422}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa2aa0a1d56aba4a8884471618de9e4, type: 3}
 --- !u!4 &2120526414 stripped
 Transform:
@@ -59755,6 +61797,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.0050000004, y: 2.072, z: 0.030000001}
   m_TimeToStationary: 0.5
+--- !u!114 &2120526422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526294405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &2121762846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60324,6 +62379,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 1.0940001, z: -0.194}
   m_TimeToStationary: 0.5
+--- !u!114 &2136544600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136544592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &2142080059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60390,6 +62458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vehicle_Police Car (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_RootOrder
       value: 588
@@ -60429,6 +62501,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2142145502}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2142145506}
   m_SourcePrefab: {fileID: 100100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
 --- !u!4 &2142145498 stripped
 Transform:
@@ -60451,6 +62526,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.002, y: 1.1550001, z: -0.193}
   m_TimeToStationary: 0.5
+--- !u!114 &2142145506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466090426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dc2e771dc343a6a0a6384e992a43a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraOffset: 0.7
 --- !u!1001 &2142962510
 PrefabInstance:
   m_ObjectHideFlags: 0

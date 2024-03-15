@@ -1,28 +1,28 @@
 ﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
 using PlayForge_Team.TopDownShooter.Runtime.Players;
-using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine;
 
-namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
+namespace PlayForge_Team.TopDownShooter.Runtime.Enemies.Movement
 {
-    public sealed class EnemyMovement : CharacterMovement
+    public abstract class EnemyMovement : CharacterMovement
     {
         private const string MovementHorizontalKey = "Horizontal";
         private const string MovementVerticalKey = "Vertical";
         
         private static readonly int Horizontal = Animator.StringToHash(MovementHorizontalKey);
         private static readonly int Vertical = Animator.StringToHash(MovementVerticalKey);
-        
+
+        protected Transform PlayerTransform;
+        private NavMeshAgent navMeshAgent;
         private Animator _animator;
-        private NavMeshAgent _navMeshAgent;
-        private Transform _playerTransform;
         private Vector3 _prevPosition;
 
         protected override void OnInit()
         {
             _animator = GetComponentInChildren<Animator>();
-            _navMeshAgent = GetComponent<NavMeshAgent>();
-            _playerTransform = FindAnyObjectByType<Player>().transform;
+            navMeshAgent = GetComponent<NavMeshAgent>();
+            PlayerTransform = FindAnyObjectByType<Player>().transform;
             _prevPosition = transform.position;
         }
         
@@ -32,20 +32,27 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
             {
                 return;
             }
+            Movement();
 
-            SetTargetPosition(_playerTransform.position);
             RefreshAnimation();
+        }
+        
+        protected abstract void Movement();
+        
+        protected void MoveToPlayer()
+        {
+            SetTargetPosition(PlayerTransform.position);
         }
         
         protected override void OnStop()
         {
-            _navMeshAgent.enabled = false;
+            navMeshAgent.enabled = false;
             RefreshAnimation();
         }
 
-        private void SetTargetPosition(Vector3 position)
+        protected void SetTargetPosition(Vector3 position)
         {
-            _navMeshAgent.SetDestination(position);
+            navMeshAgent.SetDestination(position);
         }
 
         private void RefreshAnimation()
