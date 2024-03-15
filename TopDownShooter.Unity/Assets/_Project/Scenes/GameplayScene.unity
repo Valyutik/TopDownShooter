@@ -21289,7 +21289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0eb08f1cad84828bc98e8437b258f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particlePrefab: {fileID: 9122910001317034908, guid: b4f3266f343f36b4f90f669bba00e59d, type: 3}
+  particlePrefab: {fileID: -3113767813781505208, guid: b4f3266f343f36b4f90f669bba00e59d, type: 3}
 --- !u!1001 &753734314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39122,7 +39122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1440867011
 Transform:
   m_ObjectHideFlags: 0

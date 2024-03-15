@@ -13,7 +13,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
         {
             Pool = new ObjectPool<Bullet>(CreateBullet, OnTakeBulletFromPool, 
                 OnReturnBulletToPoo, OnDestroyBullet,
-                true, 1000);
+                true, 100);
         }
 
         private Bullet CreateBullet()

@@ -10,8 +10,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
         [SerializeField] private float lifeTime = 2f;
         private ParticleSpawner _particleSpawner;
         private ObjectPool<Bullet> _pool;
-        private int _damage;
         private float _currentLifeTime;
+        private int _damage;
 
         private void OnEnable()
         {
@@ -73,7 +73,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
             var tr = transform;
             hitParticle.transform.position = hit.point;
             hitParticle.transform.rotation = Quaternion.LookRotation(-tr.up, -tr.forward);
-            hitParticle.Play();
             
             DestroyBullet();
         }

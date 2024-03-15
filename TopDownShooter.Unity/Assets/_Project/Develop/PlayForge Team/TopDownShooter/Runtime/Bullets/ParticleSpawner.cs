@@ -5,28 +5,30 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
 {
     public sealed class ParticleSpawner : MonoBehaviour
     {
-        [SerializeField] private ParticleSystem particlePrefab;
-        public ObjectPool<ParticleSystem> Pool { get; private set; }
+        [SerializeField] private HitParticle particlePrefab;
+        public ObjectPool<HitParticle> Pool { get; private set; }
         
         private void Start()
         {
-            Pool = new ObjectPool<ParticleSystem>(CreateParticle, OnTakeParticleFromPool, 
+            Pool = new ObjectPool<HitParticle>(CreateParticle, OnTakeParticleFromPool, 
                 OnReturnParticleToPoo, OnDestroyParticle,
-                true, 1000);
+                true, 100);
         }
 
-        private ParticleSystem CreateParticle()
+        private HitParticle CreateParticle()
         {
             var particle = Instantiate(particlePrefab, transform);
+            particle.SetPool(Pool);
             return particle;
         }
 
-        private void OnTakeParticleFromPool(Component particle)
+        private void OnTakeParticleFromPool(HitParticle particle)
         {
             particle.gameObject.SetActive(true);
+            particle.Play();
         }
 
-        private void OnReturnParticleToPoo(ParticleSystem particle)
+        private void OnReturnParticleToPoo(HitParticle particle)
         {
             particle.gameObject.SetActive(false);
         }
