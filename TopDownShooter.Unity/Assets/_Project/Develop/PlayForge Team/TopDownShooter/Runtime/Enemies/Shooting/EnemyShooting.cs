@@ -14,13 +14,25 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies.Shooting
         {
             base.OnInit();
             _targetTransform = FindAnyObjectByType<Player>().transform;
+            
+            foreach (var weapon in Weapons)
+            {
+                weapon.OnAutoReloadEvent += Reload;
+            }
+        }
+        
+        private void OnDestroy()
+        {
+            foreach (var weapon in Weapons)
+            {
+                weapon.OnAutoReloadEvent -= Reload;
+            }
         }
 
         protected override void Update()
         {
             base.Update();
             Shoot();
-            Reload();
         }
         
         protected override void Reload()

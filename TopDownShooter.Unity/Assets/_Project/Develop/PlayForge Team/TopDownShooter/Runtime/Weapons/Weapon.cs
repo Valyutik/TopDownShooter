@@ -1,4 +1,5 @@
 ﻿using PlayForge_Team.TopDownShooter.Runtime.Bullets;
+using PlayForge_Team.TopDownShooter.Runtime.Sounds;
 using UnityEngine;
 using System;
 using Random = UnityEngine.Random;
@@ -8,6 +9,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
     public abstract class Weapon : MonoBehaviour
     {
         public event Action<int, int> OnBulletsInRowChangeEvent;
+        public event Action OnAutoReloadEvent;
         
         public abstract WeaponIdentity Id { get; }
         
@@ -18,7 +20,22 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
         [SerializeField] private int damage = 10;
         
         private BulletSpawner bulletSpawner;
+        private WeaponSound _weaponSound;
         private Transform _bulletSpawnPoint;
+
+        private int CurrentBulletsInRow
+        {
+            get => _currentBulletsInRow;
+            set
+            {
+                _currentBulletsInRow = value;
+                if (_currentBulletsInRow <= 1)
+                {
+                    OnAutoReloadEvent?.Invoke();
+                }
+            }
+        }
+
         private int _currentBulletsInRow;
         private float _bulletTimer;
         private float _reloadingTimer;
@@ -30,6 +47,9 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
             bulletSpawner = spawner;
             _bulletSpawnPoint = GetComponentInChildren<BulletSpawnPoint>().transform;
             FillBulletsToRow();
+            
+            _weaponSound = GetComponentInChildren<WeaponSound>();
+            _weaponSound.Init();
         }
         
         private void Update()
@@ -47,24 +67,32 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
             _bulletTimer = 0;
 
             DoShoot(damageMultiplier);
-            _currentBulletsInRow--;
-            OnBulletsInRowChangeEvent?.Invoke(_currentBulletsInRow, bulletsInRow);
+            CurrentBulletsInRow--;
+            OnBulletsInRowChangeEvent?.Invoke(CurrentBulletsInRow, bulletsInRow);
+            
+            _weaponSound.PlaySound(SoundType.Shoot);
         }
         
         public void Reload()
         {
             _isReloading = true;
+            _weaponSound.PlaySound(SoundType.Reload);
         }
         
         public bool CheckHasBulletsInRow()
         {
-            return _currentBulletsInRow > 0;
+            return CurrentBulletsInRow > 0;
         }
         
         public void SetActive(bool value)
         {
             gameObject.SetActive(value);
-            OnBulletsInRowChangeEvent?.Invoke(_currentBulletsInRow, bulletsInRow);
+            OnBulletsInRowChangeEvent?.Invoke(CurrentBulletsInRow, bulletsInRow);
+            
+            if (value)
+            {
+                _weaponSound.PlaySound(SoundType.Switch);
+            }
         }
         
         protected abstract void DoShoot(float damageMultiplier);
@@ -119,8 +147,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
         {
             _isReloading = false;
             _reloadingTimer = 0;
-            _currentBulletsInRow = bulletsInRow;
-            OnBulletsInRowChangeEvent?.Invoke(_currentBulletsInRow, bulletsInRow);
+            CurrentBulletsInRow = bulletsInRow;
+            OnBulletsInRowChangeEvent?.Invoke(CurrentBulletsInRow, bulletsInRow);
         }
     }
 }

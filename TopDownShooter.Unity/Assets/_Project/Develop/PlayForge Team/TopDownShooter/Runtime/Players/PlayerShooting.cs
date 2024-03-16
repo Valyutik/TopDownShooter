@@ -15,12 +15,22 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
             _playerAction = GetComponent<PlayerAction>();
             _playerAction.ShootEvent += Shoot;
             _playerAction.ReloadEvent += Reload;
+
+            foreach (var weapon in Weapons)
+            {
+                weapon.OnAutoReloadEvent += AutoReload;
+            }
         }
 
         private void OnDestroy()
         {
             _playerAction.ShootEvent -= Shoot;
             _playerAction.ReloadEvent -= Reload;
+            
+            foreach (var weapon in Weapons)
+            {
+                weapon.OnAutoReloadEvent -= AutoReload;
+            }
         }
         
         private void AutoReload()
@@ -34,12 +44,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Players
             {
                 Reload();
             }
-        }
-
-        protected override void Shoot()
-        {
-            base.Shoot();
-            AutoReload();
         }
     }
 }

@@ -17,10 +17,11 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         public event Action<Weapon> OnSetCurrentWeaponEvent;
 
         [HideInInspector] public BulletSpawner spawner;
+        protected Weapon[] Weapons;
+        
         private WeaponIdentity _weaponId;
         private float DamageMultiplier { get; set; } = DefaultDamageMultiplier;
         private Animator _animator;
-        private Weapon[] _weapons;
         private Weapon _currentWeapon;
         private float _damageMultiplierTimer;
         private float _damageMultiplierDuration;
@@ -28,8 +29,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         protected override void OnInit()
         {
             _animator = GetComponentInChildren<Animator>();
-            _weapons = GetComponentsInChildren<Weapon>(true);
-            InitWeapons(_weapons);
+            Weapons = GetComponentsInChildren<Weapon>(true);
+            InitWeapons(Weapons);
 
             SetDefaultDamageMultiplier();
         }
@@ -85,7 +86,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         
         private void SetCurrentWeapon(WeaponIdentity identity)
         {
-            foreach (var weapon in _weapons)
+            foreach (var weapon in Weapons)
             {
                 var isTargetId = weapon.Id == identity;
 
