@@ -6,11 +6,15 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
 {
     public sealed class Bullet : MonoBehaviour
     {
+        [SerializeField] private AudioClip humanHitClip;
+        [SerializeField] private AudioClip commonHitClip;
         [SerializeField] private float speed = 30f;
         [SerializeField] private float lifeTime = 2f;
+        
         private ParticleSpawner _particleSpawner;
         private ObjectPool<Bullet> _pool;
         private float _currentLifeTime;
+        private bool _isHumanHit;
         private int _damage;
 
         private void OnEnable()
@@ -73,6 +77,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
             var tr = transform;
             hitParticle.transform.position = hit.point;
             hitParticle.transform.rotation = Quaternion.LookRotation(-tr.up, -tr.forward);
+            PlaySound(hitParticle, _isHumanHit);
+            _isHumanHit = false;
             
             DestroyBullet();
         }
@@ -84,12 +90,19 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
             if (hitHealth)
             {
                 hitHealth.AddHealthPoints(-_damage);
+                _isHumanHit = true;
             }
         }
         
         private void DestroyBullet()
         {
             _pool.Release(this);
+        }
+        
+        private void PlaySound(HitParticle hit, bool isHumanHit)
+        {
+            var audioSource = hit.AudioSource;
+            audioSource.PlayOneShot(isHumanHit ? humanHitClip : commonHitClip);
         }
     }
 }

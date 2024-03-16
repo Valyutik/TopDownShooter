@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec1c881d1dd43dab1bff55c6210446d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  humanHitClip: {fileID: 8300000, guid: f2e4750cc188c12458f13f2e6e7515d4, type: 3}
+  commonHitClip: {fileID: 8300000, guid: 3147f8e86729b2142abbf7ebbc43ab54, type: 3}
   speed: 30
   lifeTime: 2
 --- !u!1 &8652050062009025290
