@@ -8,11 +8,16 @@ using Screen = PlayForge_Team.TopDownShooter.Runtime.UI.Screens.Screen;
 
 namespace PlayForge_Team.TopDownShooter.Runtime
 {
+    [RequireComponent(typeof(AudioSource))]
     public sealed class GameStateChanger : MonoBehaviour
     {
         private const string LevelKey = "Level";
         private static int _level;
         
+        [SerializeField] private AudioClip winClip;
+        [SerializeField] private AudioClip loseClip;
+        
+        private AudioSource _audioSource;
         private CharacterHealth _playerHealth;
         private EnemySpawner _enemySpawner;
         private Screen[] _screens;
@@ -27,11 +32,27 @@ namespace PlayForge_Team.TopDownShooter.Runtime
                 }
                 return _level;
             }
-            set
+            private set
             {
                 _level = value;
                 PlayerPrefs.SetInt(LevelKey, _level);
             }
+        }
+        
+        private void Start()
+        {
+            Init();
+        }
+
+        private void Init()
+        {
+            _audioSource = GetComponent<AudioSource>();
+            _playerHealth = FindObjectOfType<PlayerHealth>();
+            _enemySpawner = FindObjectOfType<EnemySpawner>();
+            _screens = FindObjectsOfType<Screen>(true);
+            _playerHealth.OnDieEvent += LoseGame;
+            _enemySpawner.OnAllEnemiesDieEvent += WinGame;
+            ShowScreen<GameScreen>();
         }
 
         public void NextLevel()
@@ -56,30 +77,17 @@ namespace PlayForge_Team.TopDownShooter.Runtime
             ShowScreen<LoadingScreen>();
             SceneManager.LoadSceneAsync(0);
         }
-
-        private void Start()
-        {
-            Init();
-        }
-
-        private void Init()
-        {
-            _playerHealth = FindObjectOfType<PlayerHealth>();
-            _enemySpawner = FindObjectOfType<EnemySpawner>();
-            _screens = FindObjectsOfType<Screen>(true);
-            _playerHealth.OnDieEvent += LoseGame;
-            _enemySpawner.OnAllEnemiesDieEvent += WinGame;
-            ShowScreen<GameScreen>();
-        }
         
         private void LoseGame()
         {
             ShowScreen<GameLoseScreen>();
+            _audioSource.PlayOneShot(loseClip);
         }
 
         private void WinGame()
         {
             ShowScreen<GameWinScreen>();
+            _audioSource.PlayOneShot(winClip);
         }
 
         private void ShowScreen<T>() where T : Screen
