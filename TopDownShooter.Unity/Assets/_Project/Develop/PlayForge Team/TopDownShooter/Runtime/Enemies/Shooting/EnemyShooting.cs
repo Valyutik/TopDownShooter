@@ -22,14 +22,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies.Shooting
             Shoot();
             Reload();
         }
-
-        // protected override void Shoot()
-        // {
-        //     if (CheckTargetInRange() && CheckHasBulletsInRow())
-        //     {
-        //         base.Shoot();
-        //     }
-        // }
         
         protected override void Reload()
         {

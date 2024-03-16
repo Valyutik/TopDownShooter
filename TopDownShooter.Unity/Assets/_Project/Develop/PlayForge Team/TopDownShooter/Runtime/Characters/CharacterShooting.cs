@@ -60,8 +60,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 
             SetCurrentWeapon(_weaponId);
         }
-        
-        protected void DamageBonus()
+
+        private void DamageBonus()
         {
             if (_damageMultiplierDuration <= 0)
             {
@@ -104,7 +104,10 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         
         protected virtual void Shoot()
         {
-            _currentWeapon.Shoot(DamageMultiplier);
+            if (IsActive)
+            {
+                _currentWeapon.Shoot(DamageMultiplier);
+            }
         }
 
         protected bool CheckHasBulletsInRow()
