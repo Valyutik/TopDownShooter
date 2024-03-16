@@ -9,7 +9,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
     public abstract class Weapon : MonoBehaviour
     {
         public event Action<int, int> OnBulletsInRowChangeEvent;
-        public event Action OnAutoReloadEvent;
+        public event Action OnAutoReloadEvent, OnEndReloadingEvent;
         
         public abstract WeaponIdentity Id { get; }
         
@@ -22,7 +22,13 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
         private BulletSpawner bulletSpawner;
         private WeaponSound _weaponSound;
         private Transform _bulletSpawnPoint;
+        private float _reloadingTimer;
+        private float _bulletTimer;
+        private bool _isShootDelayEnd;
+        private bool _isReloading;
+        private int _currentBulletsInRow;
 
+        public bool IsReloading => _isReloading;
         private int CurrentBulletsInRow
         {
             get => _currentBulletsInRow;
@@ -35,12 +41,6 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
                 }
             }
         }
-
-        private int _currentBulletsInRow;
-        private float _bulletTimer;
-        private float _reloadingTimer;
-        private bool _isShootDelayEnd;
-        private bool _isReloading;
         
         public void Init(BulletSpawner spawner)
         {
@@ -139,6 +139,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Weapons
                 if (_reloadingTimer >= reloadingDuration)
                 {
                     FillBulletsToRow();
+                    OnEndReloadingEvent?.Invoke();
                 }
             }
         }

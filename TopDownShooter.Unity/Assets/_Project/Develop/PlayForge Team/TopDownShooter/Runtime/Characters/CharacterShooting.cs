@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using PlayForge_Team.TopDownShooter.Runtime.Bullets;
+using UnityEngine.Animations.Rigging;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 {
@@ -10,6 +11,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
     {
         public const float DefaultDamageMultiplier = 1;
         private static readonly int WeaponId = Animator.StringToHash("WeaponId");
+        private static readonly int IsReloading = Animator.StringToHash("IsReloading");
         
         public event Action<float> SetDamageMultiplierEvent;
         public event Action<float, float> ChangeDamageTimerEvent;
@@ -20,16 +22,19 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         protected Weapon[] Weapons;
         
         private WeaponIdentity _weaponId;
-        private float DamageMultiplier { get; set; } = DefaultDamageMultiplier;
         private Animator _animator;
         private Weapon _currentWeapon;
+        private Rig _rig;
         private float _damageMultiplierTimer;
         private float _damageMultiplierDuration;
+
+        private float DamageMultiplier { get; set; } = DefaultDamageMultiplier;
 
         protected override void OnInit()
         {
             _animator = GetComponentInChildren<Animator>();
             Weapons = GetComponentsInChildren<Weapon>(true);
+            _rig = GetComponentInChildren<Rig>();
             InitWeapons(Weapons);
 
             SetDefaultDamageMultiplier();
@@ -86,6 +91,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         
         private void SetCurrentWeapon(WeaponIdentity identity)
         {
+            UnsubscribeFromEndReloading();
             foreach (var weapon in Weapons)
             {
                 var isTargetId = weapon.Id == identity;
@@ -93,6 +99,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
                 if (isTargetId)
                 {
                     _currentWeapon = weapon;
+                    SubscribeToEndReloading();
 
                     OnSetCurrentWeaponEvent?.Invoke(weapon);
                 }
@@ -101,6 +108,8 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
 
             var id = WeaponIdentifier.GetAnimationIdByWeaponIdentify(identity);
             _animator.SetInteger(WeaponId, id);
+            
+            RefreshReloadingAnimation();
         }
         
         protected virtual void Shoot()
@@ -119,6 +128,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
         protected virtual void Reload()
         {
             _currentWeapon.Reload();
+            RefreshReloadingAnimation();
         }
 
         private void InitWeapons(IEnumerable<Weapon> weapons)
@@ -127,6 +137,36 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Characters
             {
                 t.Init(spawner);
             }
+        }
+        
+        private void RefreshReloadingAnimation()
+        {
+            _rig.weight = _currentWeapon.IsReloading ? 0 : 1;
+            _animator.SetBool(IsReloading, _currentWeapon.IsReloading);
+        }
+        
+        private void SubscribeToEndReloading()
+        {
+            if (!_currentWeapon)
+            {
+                return;
+            }
+            
+            _currentWeapon.OnEndReloadingEvent += RefreshReloadingAnimation;
+        }
+        
+        private void UnsubscribeFromEndReloading()
+        {
+            if (!_currentWeapon)
+            {
+                return;
+            }
+            _currentWeapon.OnEndReloadingEvent -= RefreshReloadingAnimation;
+        }
+        
+        private void OnDestroy()
+        {
+            UnsubscribeFromEndReloading();
         }
     }
 }
