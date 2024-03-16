@@ -1,9 +1,9 @@
 ﻿using PlayForge_Team.TopDownShooter.Runtime.Characters;
+using PlayForge_Team.TopDownShooter.Runtime.Bullets;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using System;
-using PlayForge_Team.TopDownShooter.Runtime.Bullets;
 using Random = UnityEngine.Random;
 
 namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
@@ -14,13 +14,15 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         private const float MaxViewportPosition = 1.1f;
         
         public event Action<Character> OnSpawnEnemyEvent;
+        public event Action OnAllEnemiesDieEvent;
 
         [SerializeField] private BulletSpawner spawner;
         [SerializeField] private EnemySpawnPoint[] spawnPoints;
         [SerializeField] private Enemy[] enemyPrefabs;
-        [SerializeField] private int enemyCount = 10;
+        [SerializeField] private int enemyCountByLevel = 10;
         [SerializeField] private float spawnDelay = 1f;
         
+        private readonly List<CharacterHealth> _enemiesHealth = new();
         private Camera _mainCamera;
         private float _spawnTimer;
         private int _spawnedEnemyCount;
@@ -42,7 +44,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
 
         private void SpawnEnemies()
         {
-            if (_spawnedEnemyCount >= enemyCount)
+            if (_spawnedEnemyCount >= GameStateChanger.Level * enemyCountByLevel)
             {
                 return;
             }
@@ -63,6 +65,22 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
             newEnemy.Init(spawner);
             _spawnedEnemyCount++;
             OnSpawnEnemyEvent?.Invoke(newEnemy);
+            
+            var newHealth = newEnemy.GetComponent<CharacterHealth>();
+            _enemiesHealth.Add(newHealth);
+            newHealth.OnDieWithObject += RemoveEnemy;
+        }
+        
+        private void RemoveEnemy(CharacterHealth health)
+        {
+            _enemiesHealth.Remove(health);
+
+            health.OnDieWithObject -= RemoveEnemy;
+
+            if (_enemiesHealth.Count <= 0)
+            {
+                OnAllEnemiesDieEvent?.Invoke();
+            }
         }
         
         private Enemy GetRandomEnemyPrefab()
