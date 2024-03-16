@@ -99,7 +99,7 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Enemies
         
         private List<EnemySpawnPoint> GetSpawnPointsOutOfCamera()
         {
-            return (from t in spawnPoints
+            return (from t in spawnPoints where t.isActiveAndEnabled
                 let pointViewportPosition = _mainCamera.WorldToViewportPoint(t.transform.position)
                 where !(pointViewportPosition.x >= MinViewportPosition) ||
                       !(pointViewportPosition.x <= MaxViewportPosition) ||
