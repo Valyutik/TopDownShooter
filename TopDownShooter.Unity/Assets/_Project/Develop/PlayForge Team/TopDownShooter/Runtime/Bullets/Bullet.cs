@@ -96,7 +96,10 @@ namespace PlayForge_Team.TopDownShooter.Runtime.Bullets
         
         private void DestroyBullet()
         {
-            _pool.Release(this);
+            if (isActiveAndEnabled)
+            {
+                _pool.Release(this);
+            }
         }
         
         private void PlaySound(HitParticle hit, bool isHumanHit)
